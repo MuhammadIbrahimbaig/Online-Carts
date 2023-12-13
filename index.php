@@ -126,7 +126,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <!-- <div class="image-holder"> -->
-                    <img src="images/pexels-cottonbro-studio-5081399.jpg" alt="product-item"  height="5%" class="img-fluid"> 
+                    <img src="images/product-item3" alt="product-item"  height="5%" class="img-fluid"> 
                   <!-- </div> -->
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">

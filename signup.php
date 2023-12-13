@@ -1,5 +1,3 @@
-
-
 <?php
     include("header.php");
     include("config.php");
@@ -18,7 +16,7 @@
         <br>
         <br>
         <br>
-          <h2 class="text-warning ">Sign up!</h2>
+          <h2 class="text-primary">Sign up!</h2>
           
           <p>Welcome to our Online Carts website!</p>
 
@@ -26,9 +24,13 @@
 
         <div class="row gx-lg-0 gy-4">
           <div class="col-lg-6 mx-auto ">
-            <form method="post" role="form" class="php-email-form1">
+            <form method="post" role="form" class="php-email-form1" enctype="multipart/form-data">
               <div class="row">
-
+              <!-- <div class="col-md-12 form-group">
+                  <input type="tel" name="name" class="form-control" id="id" placeholder="Your ID" required>
+                </div>
+<br> -->
+<br>
                 <div class="col-md-12 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Username" required>
                 </div>
@@ -78,12 +80,22 @@
       </div>
     </section><!-- End Contact Section -->
 </main>
+<?php
+    include("footer.php");
+?>
 
+
+
+</body>
+
+</html>
+
+<!-- insert Working  -->
 <?php
     if(isset($_POST["submit"])){
-    // $user_id = $_POST['user_id'];
-    // $user_role = $_POST['user_role'];
-      $user_name = $_POST['user_name'];
+      $user_role = 5;
+      // $user_id = 1;
+      $name = $_POST['name'];
       $email = $_POST['email'];
       $password = $_POST['password'];
       $address = $_POST['address'];
@@ -93,18 +105,14 @@
     //   $status = $_POST['status'];
     //  $role_id = $_POST['role_id'];
 
-      $query = "Insert into users ( user_name, email, password, address , phone , cell , dob, status, role_id)
-       values ('$user_name','$email','$password','$address','$phone','$cell','$dob')";
+      $query = "Insert into users ( name, email, password, address , phone , cell , dob)
+       values ('$name','$email','$password','$address','$phone','$cell','$dob')";
 
       $result = mysqli_query($conn, $query);
-      echo "<script>location.href = '/Online-carts/login.php';</script>";
+      echo "<script>location.href = '/E project/Online-Carts/login.php';</script>";
     }
-    include("footer.php");
+    ?>
+<?php
+include("footer.php")
 ?>
-
-
-
-</body>
-
-</html>
 
