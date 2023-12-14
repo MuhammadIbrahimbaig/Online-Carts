@@ -170,7 +170,7 @@
                       <a href="mobile.php" class="dropdown-item">Mobiles</a>
                     </li>
                     <li>
-                      <a href="shop.html" class="dropdown-item">Shop</a>
+                      <a href="shop.php" class="dropdown-item">Shop</a>
                     </li>
                  
                   </ul>
