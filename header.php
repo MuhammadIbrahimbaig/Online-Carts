@@ -175,6 +175,18 @@
                  
                   </ul>
                 </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">account</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="login.php" class="dropdown-item">Login</a>
+                    </li>
+                    <li>
+                      <a href="signup.php" class="dropdown-item">signup</a>
+                    </li>
+                   
+                  </ul>
+                </li>
                 <li class="nav-item">
                   <div class="user-items ps-5">
                     <ul class="d-flex justify-content-end list-unstyled">
