@@ -3,8 +3,7 @@
 <?php
     include("header.php");
     include("config.php");
-    $query = "SELECT * FROM user_role";
-    $result = mysqli_query($conn, $query);
+    
 ?>
 <main id="main">
 
@@ -30,7 +29,7 @@
               <div class="row">
 
                 <div class="col-md-12 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Username" required>
+                  <input type="text" name="user_name" class="form-control" id="name" placeholder="Your Username" required>
                 </div>
                 <br>
                 <br>
@@ -53,16 +52,7 @@
                 </div>
                 <br>
                 <br>
-                <div class="col-md-12 form-group mt-3 mt-md-0">
-                    <input type="tel" class="form-control" name="phone"  placeholder="Enter your Cell" required>
-                </div>
-                <br>
-                <br>
-                <div class="col-md-12 form-group">
-                  <input type="text" name="dob" class="form-control" id="name" placeholder="Your Date of birth" required>
-                </div>
-                <br>
-                <br>
+             
                 <!-- role dropdown -->
                 <!-- <div class="col-md-12 form-group mt-3 mt-md-0">
                     <input type="hidden" class="form-control" name="role_id" value="3" required>
@@ -88,16 +78,15 @@
       $password = $_POST['password'];
       $address = $_POST['address'];
       $phone = $_POST['phone'];
-      $cell = $_POST['cell'];
-      $dob = $_POST['dob'];
-    //   $status = $_POST['status'];
+
     //  $role_id = $_POST['role_id'];
 
-      $query = "Insert into users ( user_name, email, password, address , phone , cell , dob, status, role_id)
-       values ('$user_name','$email','$password','$address','$phone','$cell','$dob')";
+      $query = "INSERT INTO `users`(`user_name`, `email`, `password`, `address`, `Phone`) values ('$user_name','$email','$password','$address','$phone')";
 
       $result = mysqli_query($conn, $query);
-      echo "<script>location.href = '/Online-carts/login.php';</script>";
+      echo "<script>
+      alert('User Added Successfully'); 
+      window.location.href = 'login.php';</script>";
     }
     include("footer.php");
 ?>
