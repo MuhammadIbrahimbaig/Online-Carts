@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
   if(mysqli_num_rows($result) > 0){
     $_SESSION['user_id'] = $data['id'];
     $_SESSION['user_name'] = $data['user_name'];
-    echo "<script>location.href = 'index.php';</script>";
+    header("location: index.php");
   }
   else{
     echo "<div class='alert alert-danger w-75 mt-5 mx-auto' role='alert'>
