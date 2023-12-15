@@ -11,6 +11,8 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- font link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -160,6 +162,7 @@
                 <li class="nav-item">
                   <a class="nav-link me-4" href="service.php">Services</a>
                 </li>
+               
                 <li class="nav-item dropdown">
                   <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Products</a>
                   <ul class="dropdown-menu">
@@ -174,6 +177,20 @@
                     </li>
                  
                   </ul>
+                
+               
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">account</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="login.php" class="dropdown-item">Login</a>
+                    </li>
+                    <li>
+                      <a href="signup.php" class="dropdown-item">signup</a>
+                    </li>
+                   
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <div class="user-items ps-5">
@@ -185,13 +202,17 @@
                           </svg>
                         </a>
                       </li>
+                      <!-- login -->
                       <li class="pe-3">
-                        <a href="#">
-                          <svg class="user">
-                            <use xlink:href="#user"></use>
-                          </svg>
+                        <a href="login.php">
+                        
+                        <i class="fa fa-user" aria-hidden="true">  </i>
+                        <!-- <span class="login">Login</span> -->
+                        
                         </a>
                       </li>
+                   
+                      <!-- end -->
                       <li>
                         <a href="cart.html">
                           <svg class="cart">
