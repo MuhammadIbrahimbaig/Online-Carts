@@ -69,7 +69,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item5.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/AIRPODS.jpg" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -202,10 +202,10 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/insta-item1.jpg" alt="product-item" class="img-fluid">
+              <div class="swiper-slide"  >
+                <div class="product-card position-relative" >
+                  <div class="image-holder" >
+                    <img src="images/watch7.jpg" alt="product-item"  class="img-fluid" >
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">

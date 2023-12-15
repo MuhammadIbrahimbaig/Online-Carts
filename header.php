@@ -181,7 +181,7 @@
                
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">account</a>
+                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Login</a>
                   <ul class="dropdown-menu">
                     <li>
                       <a href="login.php" class="dropdown-item">Login</a>
