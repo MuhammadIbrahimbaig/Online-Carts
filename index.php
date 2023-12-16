@@ -69,7 +69,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item5.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/AIRPODS.jpg" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -125,9 +125,15 @@
               <!-- 4thcarts -->
                <div class="swiper-slide">
                 <div class="product-card position-relative">
+<<<<<<< HEAD
+                  <!-- <div class="image-holder"> -->
+                    <img src="images/product-item3" alt="product-item"  height="5%" class="img-fluid"> 
+                  <!-- </div> -->
+=======
                   <div class="image-holder">
                     <img src="images/watch8.jpg" alt="product-item" class="img-fluid">
                   </div>
+>>>>>>> 1c818dc1aafa0ff50056d49d1edba59d09e49e39
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
                       <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
@@ -181,7 +187,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/insta-item4.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/smartwatch3.gif" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -196,10 +202,10 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/insta-item1.jpg" alt="product-item" class="img-fluid">
+              <div class="swiper-slide"  >
+                <div class="product-card position-relative" >
+                  <div class="image-holder" >
+                    <img src="images/watch7.jpg" alt="product-item"  class="img-fluid" >
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -217,7 +223,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="#" alt="product-item" class="img-fluid">
+                    <img src="images/smartwatch.png" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -226,7 +232,7 @@
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
-                      <a href="#">Iphone 8</a>
+                      <a href="#">Watch Dual</a>
                     </h3>
                     <span class="item-price text-primary">$780</span>
                   </div>
@@ -235,7 +241,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item4.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/smartwatch2.webp" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
