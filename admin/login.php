@@ -5,16 +5,16 @@ include("config.php");
 
 
 if(isset($_POST['submit'])){
-  $user_email = $_POST['user_email'];
-  $user_password = $_POST ['user_password'];
+  $email = $_POST['email'];
+  $password = $_POST ['password'];
 
-  $query = "SELECT * from users where user_email = '$user_email' AND user_password = '$user_password'";
+  $query = "SELECT * from users where email = '$email' AND password = '$password'";
 
   $result = mysqli_query($conn, $query);
   $data = mysqli_fetch_array($result);
   if(mysqli_num_rows($result) > 0){
     $_SESSION['user_id'] = $data['id'];
-    $_SESSION['user_name'] = $data['user_name'];
+    $_SESSION['user_name'] = $data['name'];
     echo "<script>location.href = 'index.php';</script>";
   }
   else{
@@ -44,13 +44,13 @@ else{
              <form  method="post" role="form" class="php-email-form1 container">
                <div class="row">
                  <div class="col-md-12 form-group">
-                   <input type="email" name="user_email" class="form-control" id="name" placeholder="Your Email" required>
+                   <input type="email" name="email" class="form-control" id="name" placeholder="Your Email" required>
                  </div>
                  <br>
                  <br>
 
                  <div class="col-md-12 form-group mt-3 mt-md-0">
-                   <input type="password" class="form-control" name="user_password" id="email" placeholder="Your Password" required>
+                   <input type="password" class="form-control" name="password" id="email" placeholder="Your Password" required>
                  </div>
                </div>
 

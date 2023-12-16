@@ -1,8 +1,7 @@
 <?php
 include("header.php");
 include("config.php");
-<<<<<<< Updated upstream
-=======
+
 
 
 if(isset($_POST['submit'])){
@@ -28,7 +27,7 @@ if(isset($_SESSION['user_id'])){
   echo "<script>window.location.href = 'index.php';</script>";
 }
 else{
->>>>>>> Stashed changes
+
   ?>
   <!-- ======= login Section ======= -->
   <form class="form w-50 mt-5 mx-auto p-3 bg-light rounded-2" action="logincheck.php" method="POST">
@@ -40,12 +39,12 @@ else{
 <p class="mt-5 text-center">new account create? <a href="signup.php">sign up</a></p>
           <!-- End login Form -->
  
-  
+  <?php
+}?>
  
-  
+
  <?php
  include("footer.php");
-<<<<<<< Updated upstream
 ?>
 
 
@@ -71,12 +70,10 @@ else{
   <!-- Template Main JS File -->
   <!-- <script src="assets/js/main.js"></script> -->
 
-=======
 }
 
 ?>
 
->>>>>>> Stashed changes
 </body>
 
 </html>

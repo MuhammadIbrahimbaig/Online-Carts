@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> bf57f4cdda04bcb008f83dc1a8ae8e1ab8883861
 <?php
     include("header.php");
     include("config.php");
@@ -30,7 +27,7 @@
             <form method="post" role="form" class="php-email-form1" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <input type="text" name="user_name" class="form-control" id="name" placeholder="Enter Username" required>
+                  <input type="text" name="user_name" class="form-control" id="name" placeholder="First Name" required>
                 </div>
                 <br>
                 <br>

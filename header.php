@@ -1,3 +1,13 @@
+<?php
+Session_start();
+if(isset($_SESSION['user_name'])){
+  $user_name = $_SESSION['$user_name'];
+}
+else{
+  $user_name = 'default usernaem';
+}
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -202,22 +212,10 @@
                           </svg>
                         </a>
                       </li>
-                      <!-- login -->
-                      <li class="pe-3">
-                        <a href="login.php">
-                        
-                        <i class="fa fa-user" aria-hidden="true">  </i>
-                        <!-- <span class="login">Login</span> -->
-                        
-                        </a>
-                      </li>
+                   
                    
                       <!-- end -->
-                      <li>
-                        <a href="cart.html">
-                          <svg class="cart">
-                            <use xlink:href="#cart"></use>
-                          </svg>
+
                         </a>
                       </li>
                     </ul>
