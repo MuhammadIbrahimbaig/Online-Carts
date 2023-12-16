@@ -125,15 +125,9 @@
               <!-- 4thcarts -->
                <div class="swiper-slide">
                 <div class="product-card position-relative">
-<<<<<<< HEAD
-                  <!-- <div class="image-holder"> -->
-                    <img src="images/product-item3" alt="product-item"  height="5%" class="img-fluid"> 
-                  <!-- </div> -->
-=======
                   <div class="image-holder">
                     <img src="images/watch8.jpg" alt="product-item" class="img-fluid">
                   </div>
->>>>>>> 1c818dc1aafa0ff50056d49d1edba59d09e49e39
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
                       <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>

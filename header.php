@@ -157,7 +157,7 @@
                   <a class="nav-link me-4  " href="aboutus.php">About us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-4 " href="#billboard">Contact us</a>
+                  <a class="nav-link me-4 " href="contact.php">Contact us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link me-4" href="service.php">Services</a>
