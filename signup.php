@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4670688bd893a22777de6c84937e9b61253af9b5
 <?php
     include("header.php");
     include("config.php");

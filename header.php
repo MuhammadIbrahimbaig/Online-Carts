@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 Session_start();
 if(isset($_SESSION['user_name'])){
   $user_name = $_SESSION['$user_name'];
@@ -6,12 +7,23 @@ if(isset($_SESSION['user_name'])){
 else{
   $user_name = 'default usernaem';
 }
+=======
+SESSION_start();
+if (isset($_SESSION['user_name'])) {
+    // Access the array key here
+    $user_name = $_SESSION['user_name'];
+} else {
+    // Handle the case when the key is not set
+    $user_name = 'DefaultUserName';
+}
+
+>>>>>>> 4670688bd893a22777de6c84937e9b61253af9b5
 ?>
 
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ministore</title>
+    <title></title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -167,12 +179,11 @@ else{
                   <a class="nav-link me-4  " href="aboutus.php">About us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-4 " href="#billboard">Contact us</a>
+                  <a class="nav-link me-4 " href="contact.php">Contact us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link me-4" href="service.php">Services</a>
                 </li>
-               
                 <li class="nav-item dropdown">
                   <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Products</a>
                   <ul class="dropdown-menu">
@@ -190,8 +201,10 @@ else{
                 
                
                 </li>
+           
+            
                 <li class="nav-item dropdown">
-                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Login</a>
+                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">account</a>
                   <ul class="dropdown-menu">
                     <li>
                       <a href="login.php" class="dropdown-item">Login</a>

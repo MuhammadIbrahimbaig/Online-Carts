@@ -1,6 +1,7 @@
 <?php
 include("header.php");
 include("config.php");
+<<<<<<< HEAD
 
 
 
@@ -28,6 +29,8 @@ if(isset($_SESSION['user_id'])){
 }
 else{
 
+=======
+>>>>>>> 4670688bd893a22777de6c84937e9b61253af9b5
   ?>
   <!-- ======= login Section ======= -->
   <form class="form w-50 mt-5 mx-auto p-3 bg-light rounded-2" action="logincheck.php" method="POST">
@@ -37,6 +40,7 @@ else{
         <input class="btn btn-warning w-100 mt-5" type="submit" name="submit">
         
 <p class="mt-5 text-center">new account create? <a href="signup.php">sign up</a></p>
+<<<<<<< HEAD
           <!-- End login Form -->
  
   <?php
@@ -77,3 +81,8 @@ else{
 </body>
 
 </html>
+=======
+ <?php
+ include("footer.php");
+?>
+>>>>>>> 4670688bd893a22777de6c84937e9b61253af9b5
