@@ -1,13 +1,5 @@
 <?php
-<<<<<<< HEAD
-Session_start();
-if(isset($_SESSION['user_name'])){
-  $user_name = $_SESSION['$user_name'];
-}
-else{
-  $user_name = 'default usernaem';
-}
-=======
+
 SESSION_start();
 if (isset($_SESSION['user_name'])) {
     // Access the array key here
@@ -17,7 +9,6 @@ if (isset($_SESSION['user_name'])) {
     $user_name = 'DefaultUserName';
 }
 
->>>>>>> 4670688bd893a22777de6c84937e9b61253af9b5
 ?>
 
 <!DOCTYPE html>

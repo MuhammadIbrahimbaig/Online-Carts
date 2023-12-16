@@ -13,13 +13,4 @@ $result = mysqli_query($conn,$sql);
     # code...
     echo "insert";    
     header("location: index.php");
-<<<<<<< HEAD
-}
-else {
-    # code...
-    echo "not insert insert";
-=======
->>>>>>> 4670688bd893a22777de6c84937e9b61253af9b5
-
-
 ?>

@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 4670688bd893a22777de6c84937e9b61253af9b5
 <?php
     include("header.php");
     include("config.php");
@@ -30,7 +27,7 @@
             <form method="post" role="form" class="php-email-form1" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <input type="text" name="user_name" class="form-control" id="name" placeholder="First Name" required>
+                  <input type="text" name="user_name" class="form-control" id="name" placeholder="Enter Username" required>
                 </div>
                 <br>
                 <br>
@@ -82,7 +79,7 @@
 
      $role_id = $_POST['user_role'];
 
-      $query = "INSERT INTO `users`(`user_name`, `email`, `password`, `address`, `Phone`) values ('$user_name','$email','$password','$address','$phone')";
+      $query = "INSERT INTO `users`(`user_name`, `email`, `passwordd`, `address`, `Phone`) values ('$user_name','$email','$password','$address','$phone')";
 
       $result = mysqli_query($conn, $query);
       echo "<script>
