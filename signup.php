@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 <?php
     include("header.php");
     include("config.php");
@@ -87,7 +92,7 @@
       window.location.href = 'login.php';</script>";
     }
 
-    include("footer.php");
+    // include("footer.php");
 ?>
 
 

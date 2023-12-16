@@ -70,6 +70,8 @@
                 <div class="product-card position-relative">
                   <div class="image-holder">
                     <img src="images/image2.webp" alt="product-item" class="img-fluid">
+                    <br>
+                    <br>
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -78,7 +80,7 @@
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
-                      <a href="#">Pink watch</a>
+                      <a href="#">Shoes</a>
                     </h3>
                     <span class="item-price text-primary">$870</span>
                   </div>

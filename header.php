@@ -1,5 +1,5 @@
 <?php
-
+include("config.php");
 SESSION_start();
 if (isset($_SESSION['user_name'])) {
     // Access the array key here
@@ -175,6 +175,7 @@ if (isset($_SESSION['user_name'])) {
                 <li class="nav-item">
                   <a class="nav-link me-4" href="service.php">Services</a>
                 </li>
+                <!-- Drop down Collection -->
                 <li class="nav-item dropdown">
                   <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Products</a>
                   <ul class="dropdown-menu">
@@ -187,13 +188,10 @@ if (isset($_SESSION['user_name'])) {
                     <li>
                       <a href="shop.php" class="dropdown-item">Shop</a>
                     </li>
-                 
                   </ul>
-                
-               
                 </li>
-           
-            
+<!-- endddddd -->
+<!-- endddddingg -->
                 <li class="nav-item dropdown">
                   <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
                   <ul class="dropdown-menu">
@@ -203,9 +201,13 @@ if (isset($_SESSION['user_name'])) {
                     <li>
                       <a href="signup.php" class="dropdown-item">signup</a>
                     </li>
-                   
                   </ul>
                 </li>
+                <!-- drop down collection -->
+               
+<!-- end miss -->
+                <!-- End dropdown  -->
+                <!-- serach  icon-->
                 <li class="nav-item">
                   <div class="user-items ps-5">
                     <ul class="d-flex justify-content-end list-unstyled">
