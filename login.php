@@ -64,8 +64,6 @@ else{
 
 </html>
 
- <?php
- include("footer.php");
-?>
+
 
 >>>>>>> af978abc093e2f4bf1cf69c5393b32c18a1ef6c5
