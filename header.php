@@ -157,7 +157,7 @@
                   <a class="nav-link me-4  " href="aboutus.php">About us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-4 " href="#billboard">Contact us</a>
+                  <a class="nav-link me-4 " href="contact.php">Contact us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link me-4" href="service.php">Services</a>
@@ -180,7 +180,7 @@
                
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Login</a>
+                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
                   <ul class="dropdown-menu">
                     <li>
                       <a href="login.php" class="dropdown-item">Login</a>
