@@ -22,8 +22,3 @@ include("config.php");
  include("footer.php");
 ?>
 
-
-
-
-
-
