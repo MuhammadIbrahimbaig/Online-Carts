@@ -1,12 +1,13 @@
 <?php
     include("header.php");
    ?>
+  
     <section id="company-services" class="padding-large ">
       <div class="container mt-5 ">
         <div class="row">
           <div class="col-lg-3 col-md-6 pb-3 ">
             <div class="icon-box d-flex">
-              <div class="icon-box-icon pe-3 pb-3">
+         <div class="icon-box-icon pe-3 pb-3">
                 <svg class="cart-outline">
                   <use xlink:href="#cart-outline" />
                 </svg>

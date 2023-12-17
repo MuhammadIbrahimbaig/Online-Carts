@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-=======
 
-
->>>>>>> Stashed changes
 <?php
     include("header.php");
     include("config.php");

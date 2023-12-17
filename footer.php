@@ -1,4 +1,4 @@
-<footer id="footer" class="overflow-hidden">
+<footer id="footer" class="overflow-hidden ">
       <div class="container">
         <div class="row">
           <div class="footer-top-area">
