@@ -41,12 +41,12 @@
                 <br>
                 <br>
                 <div class="col-md-12 form-group mt-3 mt-md-0">
-                    <input type="text" class="form-control" name="address"  placeholder="Enter  Address" required>
+                    <input type="text" class="form-control" name="address"  placeholder=" Address" required>
                 </div>
                 <br>
                 <br>
                 <div class="col-md-12 form-group mt-3 mt-md-0">
-                    <input type="tel" class="form-control" name="phone"  placeholder="Enter  Phone no" required>
+                    <input type="tel" class="form-control" name="phone"  placeholder=" Phone " required>
                 </div>
                 <br>
                 <br>
@@ -57,7 +57,7 @@
                 </div>
               </div>
               
-              <div class="text-center mt-5"><button type="submit" class="btn btn-outline-warning " name="submit">Sign Up</button></div>
+              <div class="text-center mt-3"><button type="submit" class="btn btn-secondary w-50" name="submit">Sign Up</button></div>
               <p class="mt-5 text-center">Already have an account? <a href="login.php">Login</a></p>
             </form>
           </div><!-- End Contact Form -->
@@ -78,7 +78,8 @@
 
      $role_id = $_POST['user_role'];
 
-      $query = "INSERT INTO `users`(`user_name`, `email`, `passwordd`, `address`, `Phone`) values ('$user_name','$email','$password','$address','$phone')";
+      $query = "INSERT INTO `users`(`user_name`, `email`, `passwordd`, `address`, `Phone`)
+       values ('$user_name','$email','$password','$address','$phone')";
 
       $result = mysqli_query($conn, $query);
       echo "<script>
