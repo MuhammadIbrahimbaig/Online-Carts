@@ -195,11 +195,7 @@ if (isset($_SESSION['user_name'])) {
            
             
                 <li class="nav-item dropdown">
-<<<<<<< HEAD
                   <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
-=======
-                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">account</a>
->>>>>>> af978abc093e2f4bf1cf69c5393b32c18a1ef6c5
                   <ul class="dropdown-menu">
                     <li>
                       <a href="login.php" class="dropdown-item">Login</a>
