@@ -5,7 +5,7 @@
             <div class="row d-flex flex-wrap justify-content-between mt-5">
               <div class="col-lg-3 col-sm-6 pb-3">
                 <div class="footer-menu">
-                  <img src="###" alt="logo">
+                  <img src="#" alt="logo"style="height:50px;">
                   <p>Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.</p>
                   <div class="social-links">
                     <ul class="d-flex list-unstyled">
