@@ -999,3 +999,31 @@ figure.instagram-item img.insta-image {
 .post-navigation:focus svg {
     fill: var(--primary-color);
 }
+/* contact_us_styling */
+.contact_us_heading{
+  color: rgb(105, 22, 143);
+  font-weight: bold;
+  font-size: 55px;
+  
+}
+.contact_us_paragraph{
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif;
+}
+#submitbtn{
+  background-color: rgb(105, 22, 143);
+  border: none;
+  box-shadow: 2px 2px 5px rgb(105, 22, 143);
+  
+}
+#submitbtn:hover{
+  background-color:rgb(126, 74, 175);
+  transition: all 0.6s;
+  box-shadow: 5px 5px 15px rgb(96, 27, 161) ;
+
+}
+input{
+  box-shadow: 2px 2px 3px rgb(158, 154, 154);
+  
+}
+/* contact us styling :end */

@@ -1,15 +1,4 @@
-<?php
-include("config.php");
-SESSION_start();
-if (isset($_SESSION['user_name'])) {
-    // Access the array key here
-    $user_name = $_SESSION['user_name'];
-} else {
-    // Handle the case when the key is not set
-    $user_name = 'DefaultUserName';
-}
 
-?>
 
 <!DOCTYPE html>
 <html>

@@ -110,7 +110,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/product-item1.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/9aedcde2242a4ce1a84bcad2c19f164d.jpg_300x0q75.webp" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -129,7 +129,7 @@
                <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/watch8.jpg" alt="product-item" class="img-fluid">
+                    <img src="images/6394d880f8dc51195839d31c79f1ae02.jpg_300x0q75.webp" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -202,7 +202,7 @@
               <div class="swiper-slide"  >
                 <div class="product-card position-relative" >
                   <div class="image-holder" >
-                    <img src="images/watch7.jpg" alt="product-item"  class="img-fluid" >
+                    <img src="images/cb2e0d483f68db6e36d1a0635a630736.jpg_300x0q75.webp" alt="product-item"  class="img-fluid" >
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
@@ -220,7 +220,7 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/smartwatch.png" alt="product-item" class="img-fluid">
+                    <img src="images/d2ebad00f45a7d83b7d9133e5d809a59.jpg_300x0q75.webp" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
