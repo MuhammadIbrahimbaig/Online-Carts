@@ -2,10 +2,10 @@
 SESSION_start();
 if (isset($_SESSION['user_name'])) {
     // Access the array key here
-    $userName = $_SESSION['user_name'];
+    $user_name = $_SESSION['user_name'];
 } else {
     // Handle the case when the key is not set
-    $userName = 'DefaultUserName';
+    $user_name = 'DefaultUserName';
 }
 
 ?>
@@ -80,7 +80,7 @@ if (isset($_SESSION['user_name'])) {
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="login.php" class="dropdown-item">Login</a>
                             <a href="signup.php" class="dropdown-item">Sign Up</a>
-                            <a href="profile.php" class="dropdown-item">Profile</a>
+                            <a href="#" class="dropdown-item">Profile</a>
                             <a href="blank.html" class="dropdown-item">Blank Page</a>
                         </div>
                     </div>
@@ -112,11 +112,7 @@ if (isset($_SESSION['user_name'])) {
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">
                                 <div class="d-flex align-items-center">
-                                    <!-- <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;"> -->
-                                    <!-- <div class="ms-2"> -->
-                                        <!-- <h6 class="fw-normal mb-0">Jhon send you a message</h6> -->
-                                        <!-- <small>15 minutes ago</small> -->
-                                    <!-- </div> -->
+                                
                                 </div>
                             </a>
                             <hr class="dropdown-divider">

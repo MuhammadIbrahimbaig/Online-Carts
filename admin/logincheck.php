@@ -1,9 +1,9 @@
 <?php
     include('config.php');
-    $user_email = $_POST['user_email'];
-    $user_password = $_POST['user_password'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
-    $query = "SELECT * from users where user_email = '$user_email' AND user_password = '$user_password'";
+    $query = "SELECT * from users where email = '$email' AND password = '$password'";
 
     $result = mysqli_query($conn, $query);
     $data = mysqli_fetch_array($result);

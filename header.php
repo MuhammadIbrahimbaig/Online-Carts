@@ -1,7 +1,20 @@
+<?php
+
+SESSION_start();
+if (isset($_SESSION['user_name'])) {
+    // Access the array key here
+    $user_name = $_SESSION['user_name'];
+} else {
+    // Handle the case when the key is not set
+    $user_name = 'DefaultUserName';
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ministore</title>
+    <title></title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -179,8 +192,14 @@
                 
                
                 </li>
+           
+            
                 <li class="nav-item dropdown">
+<<<<<<< HEAD
                   <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
+=======
+                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">account</a>
+>>>>>>> af978abc093e2f4bf1cf69c5393b32c18a1ef6c5
                   <ul class="dropdown-menu">
                     <li>
                       <a href="login.php" class="dropdown-item">Login</a>
@@ -201,22 +220,10 @@
                           </svg>
                         </a>
                       </li>
-                      <!-- login -->
-                      <li class="pe-3">
-                        <a href="login.php">
-                        
-                        <i class="fa fa-user" aria-hidden="true">  </i>
-                        <!-- <span class="login">Login</span> -->
-                        
-                        </a>
-                      </li>
+                   
                    
                       <!-- end -->
-                      <li>
-                        <a href="cart.html">
-                          <svg class="cart">
-                            <use xlink:href="#cart"></use>
-                          </svg>
+
                         </a>
                       </li>
                     </ul>

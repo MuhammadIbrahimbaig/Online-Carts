@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> af978abc093e2f4bf1cf69c5393b32c18a1ef6c5
 <?php
     include("header.php");
     include("config.php");
@@ -78,7 +82,7 @@
 
      $role_id = $_POST['user_role'];
 
-      $query = "INSERT INTO `users`(`user_name`, `email`, `password`, `address`, `Phone`) values ('$user_name','$email','$password','$address','$phone')";
+      $query = "INSERT INTO `users`(`user_name`, `email`, `passwordd`, `address`, `Phone`) values ('$user_name','$email','$password','$address','$phone')";
 
       $result = mysqli_query($conn, $query);
       echo "<script>
