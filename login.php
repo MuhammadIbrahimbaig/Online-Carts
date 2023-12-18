@@ -1,36 +1,6 @@
 <?php
 include("header.php");
 include("config.php");
-<<<<<<< Updated upstream
-=======
-
-
-
-if(isset($_POST['submit'])){
-  $user_email = $_POST['user_email'];
-  $user_password = $_POST ['user_password'];
-
-  $query = "SELECT * from users where user_email = '$user_email' AND user_password = '$user_password'";
-
-  $result = mysqli_query($conn, $query);
-  $data = mysqli_fetch_array($result);
-  if(mysqli_num_rows($result) > 0){
-    $_SESSION['user_id'] = $data['id'];
-    $_SESSION['user_name'] = $data['user_name'];
-    echo "<script>window.location.href = 'index.php';</script>";
-  }
-  else{
-    echo "<div class='alert alert-danger w-75 mt-5 mx-auto' role='alert'>
-    Username or password is incorrect
-  </div>";
-  }
-}
-if(isset($_SESSION['user_id'])){
-  echo "<script>window.location.href = 'index.php';</script>";
-}
-else{
-
->>>>>>> Stashed changes
   ?>
   
   <section id="contact" class="contact ">
@@ -48,7 +18,7 @@ else{
 
         <div class="row gx-lg-0 gy-4">
           <div class="col-lg-6 mx-auto ">
-            <form method="post" methode="logincheck.php">
+            <form method="post" action="logincheck.php">
               <div class="row">
                 <div class="col-md-12 form-group">
                   <input type="email" name="user_email" class="form-control" placeholder="Enter your email" required>
