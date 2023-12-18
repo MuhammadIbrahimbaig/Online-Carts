@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 14, 2023 at 07:43 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Dec 17, 2023 at 06:40 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -51,7 +51,10 @@ CREATE TABLE `categories` (
 
 INSERT INTO `categories` (`Cat_Id`, `Category`) VALUES
 (1, 'Watches'),
-(2, 'Mobiles');
+(2, 'Mobiles'),
+(3, 'airpods'),
+(4, 'hodieeee'),
+(5, 'img');
 
 -- --------------------------------------------------------
 
@@ -68,6 +71,14 @@ CREATE TABLE `products` (
   `Prod_Category` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`prod_id`, `prodname`, `prodprice`, `prodimage`, `Prod_Desc`, `Prod_Category`) VALUES
+(1, 'Shoes', 5000, 'image2.webp', 'Best Quality Shoes', 1),
+(34, '', 0, 'img/', '', NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -78,7 +89,7 @@ CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
   `user_name` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL,
+  `passwordd` varchar(255) DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
   `Phone` varchar(11) NOT NULL,
   `role` int(11) DEFAULT NULL
@@ -88,13 +99,23 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `user_name`, `email`, `password`, `address`, `Phone`, `role`) VALUES
+INSERT INTO `users` (`user_id`, `user_name`, `email`, `passwordd`, `address`, `Phone`, `role`) VALUES
 (1, 'asfand', 'asfahan@gmail.com', '12345', 'home', '12345678988', 2),
 (2, 'wardah', 'xyz@gmail.com', 'abc123', 'karachi', '12345678901', 2),
 (3, 'Ibrahim', 'xyz@gmail.com', 'abc123', 'lahore', '12345678908', 2),
 (4, 'Ibrahim', 'xyz@gmail.com', 'abc123', 'lahore', '12345678908', 2),
 (5, 'asfand', 'xyz@gmail.com', '123', 'lahore', '12345678988', 2),
-(6, 'admin', 'admin@gmail.com', 'admin123', 'karachi', '03124567894', 1);
+(6, 'admin', 'admin@gmail.com', 'admin123', 'karachi', '03124567894', 1),
+(7, 'Mubsir', 'mubsir@gmail.com', 'mubsir', 'I block', '03172239904', 2),
+(8, 'sufi', 'sufi@gmail.com', 'sufi', 'bahria', '424224424', 2),
+(9, 'Arbaz', 'arbaz@gmail.com', '6767', 'aotech', '7654', 1),
+(10, 'talha', 'talha@gmail.com', 'talha', 'new', '98768868686', 2),
+(11, 'hina', 'hina@gmail.com', 'hina', '234567', '0987654', 2),
+(12, 'jannat', 'jannat@gmail.com', 'janat', 'home', '98765', 2),
+(13, 'anus', 'anus@gmail.com', 'anus', 'hme', '09876876', 2),
+(14, 'Imran', 'imran@gmail.com', 'imran', 'home', '0987654', 1),
+(15, 'niazi', 'nizazi@gmail.com', '234', '2345', '2334', NULL),
+(16, 'xubi', 'xubi@gmail.com', 'xubi', 'home', '098765', NULL);
 
 -- --------------------------------------------------------
 
@@ -153,19 +174,19 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `Cat_Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Cat_Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `user_role`

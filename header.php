@@ -136,7 +136,7 @@
       <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.php">
-            <img src="images/main-logo.png" class="logo">
+            <img src="#" class="logo" style="height:70px; widht: 100px; ">
           </a>
           <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <svg class="navbar-icon">
@@ -180,7 +180,7 @@
                   </ul>
                 </li>
 <!-- endddddd -->
-<!-- endddddingg -->
+<!-- Asfhan -->
                 <li class="nav-item dropdown">
                   <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
                   <ul class="dropdown-menu">
@@ -193,7 +193,31 @@
                   </ul>
                 </li>
                 <!-- drop down collection -->
-               
+                <!-- miss -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          
+
+<ul class="dropdown-menu">
+            <?php
+                $con = mysqli_connect("localhost","root","", "online_carts");
+                
+                $query= "SELECT * FROM `categories`";
+
+                $result= mysqli_query($con, $query);
+
+                while($opt= mysqli_fetch_assoc($result)){
+            
+?>
+    <li><a class="dropdown-item" href="category.php?id=<?php echo $opt['Cat_Id'] ?> "><?php echo $opt['category'] ?></a>
+</li>
+
+<?php 
+}
+ ?>   
+
 <!-- end miss -->
                 <!-- End dropdown  -->
                 <!-- serach  icon-->

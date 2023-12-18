@@ -97,3 +97,14 @@
 ?>
 
 
+
+
+<!-- form product -->
+       <!-- <select name="category" id="" class="form-control mt-2" > -->
+       <?php
+                // while($data = mysqli_fetch_assoc($result)){
+                    ?>
+                    <!-- <option value="<?php echo $data["id"]?>"><?php echo $data["category"]?></option> -->
+                    <?php
+                // }
+                ?>

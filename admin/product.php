@@ -1,6 +1,6 @@
 <?php
     include("config.php");
-    $query = "SELECT * FROM product;";
+    $query = "SELECT * FROM products;";
     $result = mysqli_query($conn, $query);
     ?>
 
@@ -19,8 +19,11 @@
             <thead>
                 <tr>
                     <th>Product_ID</th>
-                    <th>ProductName</th>
-                    <th>category</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Image</th>
+                    <th>Product Description</th>
+                    <th>Product Category</th>
                     
               
 
@@ -31,9 +34,12 @@
                 while($data = mysqli_fetch_assoc($result)){
                     ?>
                     <tr>
-                        <td><?php echo $data["prodId"]?></td>
-                        <td><?php echo $data["productName"]?></td>
-                        <td><?php echo $data["category"]?></td>
+                        <td><?php echo $data["prod_id"]?></td>
+                        <td><?php echo $data["prodname"]?></td>
+                        <td><?php echo $data["prodprice"]?></td>
+                        <td><?php echo $data["prodimage"]?></td>
+                        <td><?php echo $data ["Prod_Desc"]?></td>
+                        <td><?php echo $data["Prod_Category"]?></td>
                         
 
                         <?php

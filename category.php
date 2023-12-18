@@ -2,7 +2,7 @@
                 $con = mysqli_connect("localhost","root","", "online_carts");
                 $prod_id= $_GET['id'];
 
-                $query= "SELECT * FROM `products` where categories = $prod_id";
+                $query= "SELECT * FROM `products` where prod_Category = $prod_id";
 
                 $result= mysqli_query($con, $query);
 
