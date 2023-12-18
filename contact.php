@@ -34,7 +34,8 @@ include("header.php");
                     <input type="password"  name="password" class="form-control " placeholder="Enter password" aria-label="password">
                     <!-- <button type="submit" class="btn btn-primary  mt-4">submit</button> -->
                   <br>
-                  <button type="submit" class="btn btn-secondary w-50  mt-2" id="submitbtn" data-bs-toggle="tooltip" data-bs-placement="top" title="submit">Submit</button>
+                  
+                  <button type="submit" class="btn btn-secondary w-50" name="submit">Submit</button>
                 </form>
         </div>
         </div>

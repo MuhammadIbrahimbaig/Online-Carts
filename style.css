@@ -1020,7 +1020,7 @@ figure.instagram-item img.insta-image {
     fill: var(--primary-color);
 }
 /* contact_us_styling */
-.contact_us_heading{
+/* .contact_us_heading{
   color: rgb(105, 22, 143);
   font-weight: bold;
   font-size: 55px;
@@ -1045,5 +1045,5 @@ figure.instagram-item img.insta-image {
 input{
   box-shadow: 2px 2px 3px rgb(158, 154, 154);
   
-}
+} */
 /* contact us styling :end */
