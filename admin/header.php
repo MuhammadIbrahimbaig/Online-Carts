@@ -69,9 +69,9 @@ if (isset($_SESSION['user_name'])) {
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>add product</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                             <a href="element.html" class="dropdown-item">Other Elements</a> 
+                             <a href="formproduct.php" class="dropdown-item">product</a> 
                         </div>
                     </div>
                   

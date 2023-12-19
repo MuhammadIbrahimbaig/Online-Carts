@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 18, 2023 at 07:38 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Dec 19, 2023 at 07:17 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -77,7 +77,13 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`prod_id`, `prodname`, `prodprice`, `prodimage`, `Prod_Desc`, `Prod_Category`) VALUES
 (1, 'Shoes', 5000, 'image2.webp', 'Best Quality Shoes', 1),
-(34, '', 0, 'img/', '', NULL);
+(2, 'watch', 5000, 'image-removebg-preview---2023-07-20t150738.webp', 'best watches and best sell product  go to the shop and buy product', 2),
+(4, 'EarBuds', 5000, '89987ac25945695f035c7f220a89f7ca.jpg', 'Mast Awaz ati hai ', 3),
+(37, '', 0, 'imges/', '', NULL),
+(38, '', 0, 'imges/', '', NULL),
+(39, 'watch', 5000, '', 'best watches and best sell product  go to the shop and buy product', 3),
+(40, 'watch', 5000, '', 'best watches and best sell product  go to the shop and buy product', 3),
+(41, 'EarBuds', 5000, 'img/89987ac25945695f035c7f220a89f7ca.jpg', 'sdfdgdfg', 3);
 
 -- --------------------------------------------------------
 
@@ -115,7 +121,9 @@ INSERT INTO `users` (`user_id`, `user_name`, `email`, `passwordd`, `address`, `P
 (13, 'anus', 'anus@gmail.com', 'anus', 'hme', '09876876', 2),
 (14, 'Imran', 'imran@gmail.com', 'imran', 'home', '0987654', 1),
 (15, 'niazi', 'nizazi@gmail.com', '234', '2345', '2334', NULL),
-(16, 'xubi', 'xubi@gmail.com', 'xubi', 'home', '098765', NULL);
+(16, 'xubi', 'xubi@gmail.com', 'xubi', 'home', '098765', NULL),
+(17, 'Ibrahim', 'xyz@gmail.com', '112233', 'street', '12345678988', 2),
+(18, 'kuch bhiii', 'kuchbhi@gmail.com', 'kuchbhi', 'lahore', '090078601', 2);
 
 -- --------------------------------------------------------
 
@@ -180,13 +188,13 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `user_role`

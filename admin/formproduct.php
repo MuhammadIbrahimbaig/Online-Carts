@@ -17,19 +17,28 @@
 </head>
 <body>
     
-    <form class="form w-50 mt-5  mx-auto" action="addproduct.php" method="GET" enctype="multipart/form-data">
+    <form class="form w-50 mt-5  mx-auto" action="addproduct.php" method="POST" enctype="multipart/form-data">
         <h1 class="text-centre display-5">Add Products</h1>
-        <input class="form-control p-1 mt-2" placeholder="ProdId" type="text" name="prod_id" required>
+        <!-- <input class="form-control p-1 mt-2" placeholder="ProdId" type="text" name="prod_id" required> -->
         <input class="form-control p-1 mt-2" placeholder="ProductName" type="text"  name="prodname" required>
         <input class="form-control p-1 mt-2" placeholder="ProductPrice" type="text"  name="prodprice" required>
         <input class="form-control p-1 mt-2" placeholder="Product Image" type="file"  name="prodimage" required>
         <input class="form-control p-1 mt-2" placeholder="Product Description" type="text"  name="Prod_Desc" required>
 
-        <input class="form-control p-1 mt-2" placeholder="Product category"  type="number"  name="Prod_Category">
-      
+        <!-- <input class="form-control p-1 mt-2" placeholder="Product category"  type="number"  name="Prod_Category"> -->
 
- 
-                </select>
+        <select name="cat" id="">
+            <?php
+                $qry= "select * from categories";
+                $res= mysqli_query($conn, $qry);
+                while($data=mysqli_fetch_assoc($res)){
+             
+            ?>
+  
+      
+                <option value="<?php echo $data['Cat_Id'] ?>"><?php echo $data['Category'] ?></option>
+                <?php }?>
+            </select>
               
                 <input class="btn btn-outline-warning text-dark w-100 mt-5 border-dark" type="submit" name="submit">
            
@@ -41,6 +50,10 @@
 
     
 require("config.php");
+
+if(isset($_GET['submit'])){
+
+
 $img= $_FILES["prodimage"];
 print_r($img);
 
@@ -52,8 +65,8 @@ $mypath= "imges/".$imgname;
 move_uploaded_file($temppath,$mypath);
 
 $qry="INSERT INTO `products`(`prodimage`) VALUES ('$mypath')";
-mysqli_query($conn,$qry)
-
+mysqli_query($conn,$qry);
+}
 ?>
     
 </body>

@@ -213,7 +213,7 @@
                 while($opt= mysqli_fetch_assoc($result)){
             
 ?>
-    <li><a class="dropdown-item" href="category.php?id=<?php echo $opt['Cat_Id'] ?> "><?php echo $opt['category'] ?></a>
+    <li><a class="dropdown-item" href="category.php?id=<?php echo $opt['Cat_Id'] ?> "><?php echo $opt['Category'] ?></a>
 </li>
 
 <?php 

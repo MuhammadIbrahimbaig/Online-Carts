@@ -1,15 +1,24 @@
 <?php
     include("config.php");
 
-    $prod_id = $_GET["prod_id"];
-    $prodname = $_GET["prodname"];
-    $prodprice = $_GET["prodprice"];
-    $prodimage = $_GET["prodimage"];
-    $Prod_Desc =$_GET["Prod_Desc"];
-    $Prod_Category = $_GET["Prod_Category"];
-    
-    $query = "INSERT INTO `products` (`prod_id`,`prodname`,`prodprice`,`prodimage`,`prod_desc`,`prod_category`)
-    VALUES ('$prod_id','$prodname','$prodprice','$prodimage','$Prod_Desc','$Prod_Category')";
+   //  $prod_id = $_POST["prod_id"];
+    $prodname = $_POST["prodname"];
+    $prodprice = $_POST["prodprice"];
+   //  $prodimage = $_POST["prodimage"];
+    $Prod_Desc =$_POST["Prod_Desc"];
+    $Prod_Category = $_POST["cat"];
+    $img= $_FILES["prodimage"];
+// print_r($img);
+
+
+$imgname= $img['name'];
+$temppath = $img['tmp_name'];
+$mypath= "img/".$imgname;
+
+move_uploaded_file($temppath,$mypath);
+
+    $query = "INSERT INTO `products` (`prodname`,`prodprice`, `prodimage`,`prod_desc`,`prod_category`)
+    VALUES ('$prodname','$prodprice', '$mypath','$Prod_Desc','$Prod_Category')";
     
 
 
