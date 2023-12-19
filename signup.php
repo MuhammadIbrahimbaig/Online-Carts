@@ -79,8 +79,8 @@
 
      $role_id = $_POST['user_role'];
 
-      $query = "INSERT INTO `users`(`user_name`, `email`, `passwordd`, `address`, `Phone`)
-       values ('$user_name','$email','$password','$address','$phone')";
+      $query = "INSERT INTO `users`(`user_name`, `email`, `passwordd`, `address`, `Phone`, `role`)
+       values ('$user_name','$email','$password','$address','$phone','2')";
 
       $result = mysqli_query($conn, $query);
       echo "<script>
