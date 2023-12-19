@@ -1,13 +1,14 @@
 <?php
     include("config.php");
 
-   //  $prod_id = $_POST["prod_id"];
+
     $prodname = $_POST["prodname"];
     $prodprice = $_POST["prodprice"];
-   //  $prodimage = $_POST["prodimage"];
     $Prod_Desc =$_POST["Prod_Desc"];
     $Prod_Category = $_POST["cat"];
     $img= $_FILES["prodimage"];
+
+   //  image SEt Working=================================
 // print_r($img);
 
 
@@ -25,7 +26,9 @@ move_uploaded_file($temppath,$mypath);
  $result = mysqli_query($conn , $query); 
  
  if ($result) {
-    echo "Record";
+    echo "<div class='alert alert-primary w-75 mt-5 mx-auto' role='alert'>
+    Product Added in your Database
+  </div>";
  }
  else{
     echo " error record";

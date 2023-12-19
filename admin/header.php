@@ -38,6 +38,8 @@ if (isset($_SESSION['user_name'])) {
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -67,11 +69,11 @@ if (isset($_SESSION['user_name'])) {
                     <h3 class="text-primary">Admin Panel</h3>
                 </a>
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>add product</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-product-hunt" aria-hidden="true"></i>Add product</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                             <a href="formproduct.php" class="dropdown-item">product</a> 
+                             <a href="formproduct.php" class="dropdown-item">Product Form</a> 
                         </div>
                     </div>
                   
@@ -79,7 +81,7 @@ if (isset($_SESSION['user_name'])) {
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="login.php" class="dropdown-item">Login</a>
-                            <a href="signup.php" class="dropdown-item">Sign Up</a>
+                            <!-- <a href="signup.php" class="dropdown-item">Sign Up</a> -->
                             <a href="#" class="dropdown-item">Profile</a>
                             <a href="blank.html" class="dropdown-item">Blank Page</a>
                         </div>
