@@ -81,8 +81,8 @@ if (isset($_SESSION['user_name'])) {
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="login.php" class="dropdown-item">Login</a>
-                            <!-- <a href="signup.php" class="dropdown-item">Sign Up</a> -->
-                            <a href="#" class="dropdown-item">Profile</a>
+                            <a href="signup.php" class="dropdown-item">Sign Up</a>
+                            <a href="table.php" class="dropdown-item">Profile</a>
                             <a href="blank.html" class="dropdown-item">Blank Page</a>
                         </div>
                     </div>
