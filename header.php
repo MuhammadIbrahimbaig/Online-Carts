@@ -164,23 +164,7 @@
                 <li class="nav-item">
                    <a class="nav-link me-4" href="service.php">Services</a>
                 </li>
-                <!-- Drop down Collection -->
-                <li class="nav-item dropdown">
-                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Products</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="smartwatch.php" class="dropdown-item">Watches</a>
-                    </li>
-                    <li>
-                      <a href="mobile.php" class="dropdown-item">Mobiles</a>
-                    </li>
-                    <li>
-                      <a href="shop.php" class="dropdown-item">Shop</a>
-                    </li>
-                  </ul>
-                </li>
-<!-- endddddd -->
-<!-- Asfhan -->
+               
 
          
          <li class="nav-item dropdown">

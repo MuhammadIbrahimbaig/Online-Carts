@@ -19,15 +19,14 @@
     
     <form class="form w-50 mt-5  mx-auto" action="addproduct.php" method="POST" enctype="multipart/form-data">
         <h1 class="text-centre display-5">Add Products</h1>
-        <!-- <input class="form-control p-1 mt-2" placeholder="ProdId" type="text" name="prod_id" required> -->
         <input class="form-control p-1 mt-2" placeholder="ProductName" type="text"  name="prodname" required>
         <input class="form-control p-1 mt-2" placeholder="ProductPrice" type="text"  name="prodprice" required>
         <input class="form-control p-1 mt-2" placeholder="Product Image" type="file"  name="prodimage" required>
         <input class="form-control p-1 mt-2" placeholder="Product Description" type="text"  name="Prod_Desc" required>
-
-        <!-- <input class="form-control p-1 mt-2" placeholder="Product category"  type="number"  name="Prod_Category"> -->
-
-        <select name="cat" id="">
+        <br>
+        
+            <!-- Category Drop DOwn -->
+        <select name="cat" id="" class=" form-control">
             <?php
                 $qry= "select * from categories";
                 $res= mysqli_query($conn, $qry);
@@ -45,10 +44,9 @@
 
     </form>
     
-    <!-- // image work -->
+    <!-- // image work =======///////-->
     <?php
 
-    
 require("config.php");
 
 if(isset($_GET['submit'])){
@@ -60,7 +58,7 @@ print_r($img);
 
 $imgname= $img['prodname'];
 $temppath = $img['tmp_name'];
-$mypath= "imges/".$imgname;
+$mypath= "images/".$imgname;
 
 move_uploaded_file($temppath,$mypath);
 
