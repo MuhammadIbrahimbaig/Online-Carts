@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 19, 2023 at 07:17 AM
+-- Generation Time: Dec 21, 2023 at 07:06 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -79,11 +79,9 @@ INSERT INTO `products` (`prod_id`, `prodname`, `prodprice`, `prodimage`, `Prod_D
 (1, 'Shoes', 5000, 'image2.webp', 'Best Quality Shoes', 1),
 (2, 'watch', 5000, 'image-removebg-preview---2023-07-20t150738.webp', 'best watches and best sell product  go to the shop and buy product', 2),
 (4, 'EarBuds', 5000, '89987ac25945695f035c7f220a89f7ca.jpg', 'Mast Awaz ati hai ', 3),
-(37, '', 0, 'imges/', '', NULL),
-(38, '', 0, 'imges/', '', NULL),
-(39, 'watch', 5000, '', 'best watches and best sell product  go to the shop and buy product', 3),
 (40, 'watch', 5000, '', 'best watches and best sell product  go to the shop and buy product', 3),
-(41, 'EarBuds', 5000, 'img/89987ac25945695f035c7f220a89f7ca.jpg', 'sdfdgdfg', 3);
+(41, 'EarBuds', 5000, 'img/89987ac25945695f035c7f220a89f7ca.jpg', 'sdfdgdfg', 3),
+(42, 'About', 900, 'img/imr.jpg', 'imran', 4);
 
 -- --------------------------------------------------------
 
@@ -188,7 +186,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `users`
