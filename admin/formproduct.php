@@ -18,7 +18,8 @@
 <body>
     
     <form class="form w-50 mt-5  mx-auto" action="addproduct.php" method="POST" enctype="multipart/form-data">
-        <h1 class="text-centre display-5">Add Products</h1>
+        <h1 class="fw-bold display-5  fs-2 text-center">𝒜𝒟𝒟 𝒫𝑅𝒪𝒟𝒰𝒞𝒯𝒮</h1>
+        
         <input class="form-control p-1 mt-2" placeholder="ProductName" type="text"  name="prodname" required>
         <input class="form-control p-1 mt-2" placeholder="ProductPrice" type="text"  name="prodprice" required>
         <input class="form-control p-1 mt-2" placeholder="Product Image" type="file"  name="prodimage" required>
