@@ -1,6 +1,6 @@
 
 <?php
-include("header.php");
+
 include("config.php");
 
 
@@ -15,6 +15,8 @@ if(isset($_POST['submit'])){
   if(mysqli_num_rows($result) > 0){
     $_SESSION['user_id'] = $data['id'];
     $_SESSION['user_name'] = $data['name'];
+    $_SESSION['role'] = $data['role'];
+
     echo "<script>location.href = 'index.php';</script>";
   }
   else{
@@ -61,9 +63,7 @@ else{
              </form>
  
            </div><!-- End login Form -->
-           <?php
-include("footer.php");
-?>
+
          </div>
 
        </div>
@@ -73,6 +73,7 @@ include("footer.php");
    </main>
  <?php
 }
+
 ?>
 
 </body>

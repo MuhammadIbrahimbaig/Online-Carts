@@ -167,34 +167,19 @@ if (isset($_SESSION['user_name'])) {
                     </div>
                     
                     <!-- new -->
-          <?php
-           if (!isset($_SESSION['user_name'])) {
-
-          ?>
-                    <div class="nav-item">
-                        <a href="login.php" class="nav-link " >
-                            <span class="d-none d-lg-inline-flex"><i class="fa fa-user" aria-hidden="true"></i></span>
-                        </a>
-                    </div>
-                    <?php
-           }else{
-
-           
-                    ?>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                           <span class="d-none d-lg-inline-flex"> <?php echo $_SESSION["user_name"];?></span>
+                       
+                           <span class="d-none d-lg-inline-flex"> </span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light">
-                           <!-- Drop down Files links  -->
-                            <a href="profile.php?id=<?php echo $_SESSION['user_id']; ?>" class="dropdown-item">Edit Profile</a>
+                            <!-- my -->
+                            <a href="login.php" class="dropdown-item">Login</a>
+                            <a href="profile.php" class="dropdown-item">My Profile</a>
                             <a href="#" class="dropdown-item">Settings</a>
                             <a href="logout.php" class="dropdown-item">Log Out</a>
                         </div>
                     </div>
-                    <?php
-           }
-                    ?>
                 </div>
             </nav>
          

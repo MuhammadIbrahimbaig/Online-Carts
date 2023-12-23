@@ -32,12 +32,7 @@ $result = mysqli_query($conn,$query);
                 
                 <td><a  onclick="return confirm('are you sure data edit')" href="edit.php?id=<?php echo $data["user_id"]; ?>" >edit</a></td>
                 <td><a  onclick="return confirm('are you sure delete data')"  href="delete.php?id=<?php echo $data["user_id"]; ?>" >delete</a></td>
-
-
-                
-                
-
-                
+    
                 </tr>
                 <?php
             }

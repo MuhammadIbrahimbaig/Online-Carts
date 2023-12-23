@@ -2,6 +2,7 @@
 require("config.php");
 
 require("header.php");
+if($_SESSION['role'] == 1){
 ?>
 
 
@@ -56,4 +57,8 @@ require("header.php");
 
             <?php
 require("footer.php");
+}
+else{
+    header('location:login.php');
+}
 ?>

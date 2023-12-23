@@ -48,23 +48,23 @@
     <!-- // image work =======///////-->
     <?php
 
-require("config.php");
+        require("config.php");
 
-if(isset($_GET['submit'])){
-
-
-$img= $_FILES["prodimage"];
-print_r($img);
+        if(isset($_GET['submit'])){
 
 
-$imgname= $img['prodname'];
-$temppath = $img['tmp_name'];
-$mypath= "images/".$imgname;
+        $img= $_FILES["prodimage"];
+        print_r($img);
 
-move_uploaded_file($temppath,$mypath);
 
-$qry="INSERT INTO `products`(`prodimage`) VALUES ('$mypath')";
-mysqli_query($conn,$qry);
+        $imgname= $img['prodname'];
+        $temppath = $img['tmp_name'];
+        $mypath= "images/".$imgname;
+
+        move_uploaded_file($temppath,$mypath);
+
+        $qry="INSERT INTO `products`(`prodimage`) VALUES ('$mypath')";
+        mysqli_query($conn,$qry);
 }
 ?>
     
