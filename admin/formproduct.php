@@ -35,7 +35,7 @@
              
             ?>
   
-      
+
                 <option value="<?php echo $data['Cat_Id'] ?>"><?php echo $data['Category'] ?></option>
                 <?php }?>
             </select>
@@ -53,8 +53,13 @@
         if(isset($_GET['submit'])){
 
 
+<<<<<<< Updated upstream
         $img= $_FILES["prodimage"];
         print_r($img);
+=======
+$img= $_FILES["prodimage"];
+// print_r($img);
+>>>>>>> Stashed changes
 
 
         $imgname= $img['prodname'];

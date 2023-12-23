@@ -4,15 +4,15 @@ include("header.php");
 
 
 
-<style>
+<!-- <style>
     .card img{
         width:200px;
         height:200px;
     }
-</style>
+</style> -->
 </head>
 <body>
-    <div class="container  ">
+    <div class="container   ">
         <div class="row ">
             <?php
         require("config.php");
@@ -22,7 +22,7 @@ include("header.php");
         while($row= mysqli_fetch_assoc($result)){
             ?>
             <!-- cards -->
-            <div class="card" style="width: 18rem;">
+            <div class="card mt-5" style="width: 18rem;">
   <img src="<?php echo $row["prodimage"]?>" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title"><?php echo $row["prodname"]?></h5>
