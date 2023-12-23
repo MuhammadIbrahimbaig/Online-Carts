@@ -206,20 +206,7 @@
 
 <!-- end miss -->
                 <!-- End dropdown  -->
-                <!-- serach  icon-->
-                <li class="nav-item">
-                  <div class="user-items ps-5">
-                    <ul class="d-flex justify-content-end list-unstyled">
-                      <li class="search-item pe-3">
-                        <a href="#" class="search-button">
-                          <svg class="search">
-                            <use xlink:href="#search"></use>
-                          </svg>
-                        </a>
-                      </li>
-                   
-                   
-                      <!-- end -->
+
 
                         </a>
                       </li>

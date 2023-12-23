@@ -53,13 +53,10 @@
         if(isset($_GET['submit'])){
 
 
-<<<<<<< Updated upstream
         $img= $_FILES["prodimage"];
         print_r($img);
-=======
 $img= $_FILES["prodimage"];
 // print_r($img);
->>>>>>> Stashed changes
 
 
         $imgname= $img['prodname'];
