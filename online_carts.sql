@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 21, 2023 at 07:06 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Dec 24, 2023 at 11:44 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -53,8 +53,8 @@ INSERT INTO `categories` (`Cat_Id`, `Category`) VALUES
 (1, 'Watches'),
 (2, 'Mobiles'),
 (3, 'airpods'),
-(4, 'hodieeee'),
-(5, 'img');
+(4, 'hodiee'),
+(5, 'shoes');
 
 -- --------------------------------------------------------
 
@@ -76,12 +76,14 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`prod_id`, `prodname`, `prodprice`, `prodimage`, `Prod_Desc`, `Prod_Category`) VALUES
-(1, 'Shoes', 5000, 'image2.webp', 'Best Quality Shoes', 1),
-(2, 'watch', 5000, 'image-removebg-preview---2023-07-20t150738.webp', 'best watches and best sell product  go to the shop and buy product', 2),
-(4, 'EarBuds', 5000, '89987ac25945695f035c7f220a89f7ca.jpg', 'Mast Awaz ati hai ', 3),
-(40, 'watch', 5000, '', 'best watches and best sell product  go to the shop and buy product', 3),
-(41, 'EarBuds', 5000, 'img/89987ac25945695f035c7f220a89f7ca.jpg', 'sdfdgdfg', 3),
-(42, 'About', 900, 'img/imr.jpg', 'imran', 4);
+(46, 'Smart Watch', 4000, 'img/smartwatch.png', 'Mobile watch best quality', 1),
+(48, 'Mobile', 1900000, 'img/mobile1.webp', 'Smart phone best quality', 2),
+(49, 'Mobile', 34000, 'img/mobile2.webp', 'Smart phone best quality', 2),
+(50, 'Mobile', 50000, 'img/mobile3.webp', 'Smart phone best quality', 2),
+(51, 'smart watch', 6000, 'img/smartwatch2.webp', 'Buy Dany Loop Pro Smart Watch Price in Pakistan', 1),
+(52, 'Smart watch', 9000, 'img/smartwatch3.gif', 'Buy T10 Ultra Bluetooth Calling Watch Price in Pakistan', 1),
+(53, 'Smart watch', 9000, 'img/smartwatch4.webp', 'Buy S100 Pro Max Smart Watch With 4 Straps Price in Pakistan', 1),
+(55, 'Hodiee', 1300, 'img/01.png', 'best Quality', 4);
 
 -- --------------------------------------------------------
 
@@ -186,7 +188,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `users`
