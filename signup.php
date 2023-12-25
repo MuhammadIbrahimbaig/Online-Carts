@@ -76,8 +76,7 @@
       $password = $_POST['password'];
       $address = $_POST['address'];
       $phone = $_POST['phone'];
-
-     $role_id = $_POST['user_role'];
+      $role_id = $_POST['user_role'];
 
       $query = "INSERT INTO `users`(`user_name`, `email`, `passwordd`, `address`, `Phone`, `role`)
        values ('$user_name','$email','$password','$address','$phone','2')";
@@ -88,7 +87,6 @@
       window.location.href = 'login.php';</script>";
     }
 
-    // include("footer.php");
 ?>
 
 
@@ -101,16 +99,13 @@
 <?php
     if(isset($_POST["submit"])){
       $user_role = 5;
-      // $user_id = 1;
+      $user_id = 1;
       $name = $_POST['name'];
       $email = $_POST['email'];
       $password = $_POST['password'];
       $address = $_POST['address'];
       $phone = $_POST['phone'];
-      // $cell = $_POST['cell'];
-      // $dob = $_POST['dob'];
-    //   $status = $_POST['status'];
-    //  $role_id = $_POST['role_id'];
+   
 
       $query = "Insert into users ( name, email, password, address , phone )
        values ('$name','$email','$password','$address','$phone')";

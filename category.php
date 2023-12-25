@@ -28,18 +28,18 @@ include 'header.php';
                  
                  ?> 
 <br>
-<br>
-<br>
 
-
-<div class="card " style="width: 18rem; ">
-  <img src="admin/<?php echo $opt['prodimage'] ?>" class="card-img-top" alt="...">
-  <div class="card-body  ">
+<div class="container row-cols-1 row-cols-md-3 g-4 mt-3">
+  <div class="col">
+<div class="card h-100 " style="width: 18rem; ">
+  <img src="admin/<?php echo $opt['prodimage'] ?>" class="card-img-top h-50" alt="...">
+  <div class="card-body ">
     <h5 class="card-title"><?php echo $opt['prodname'] ?></h5>
     <p class="card-text"><?php echo $opt['Prod_Desc'] ?></p>
     <a href="#" class="btn btn-primary">Add to cart</a>
   </div>
 </div>
-
+</div>
+</div>
 <br>
                  <?php } ?>

@@ -30,9 +30,6 @@ include 'header.php';
 <br>
 <br>
 <br>
-
-
-
 <div class="row row-cols-1 row-cols-md-3 g-4 mt-3" style="padding: 20px;">
   <div class="col">
     <div class="card h-100 ">
@@ -42,7 +39,6 @@ include 'header.php';
           <br>
         <h5 class="card-title"><?php echo $opt['prodname']?></h5>
           <p class="card-text"><?php echo $opt['Prod_Desc']?></p>
-          
         </div>
       <!-- buttton bUy-->
       <div class="ibrahim">
