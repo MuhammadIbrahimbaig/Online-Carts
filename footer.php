@@ -95,7 +95,7 @@
               <div class="col-lg-3 col-sm-6 pb-3">
                 <div class="footer-menu contact-item">
                   <h5 class="widget-title text-uppercase pb-2">Contact Us</h5>
-                  <p>Do you have any queries or suggestions? <a href="mailto:">baigibrahim429@gmail.com</a>
+                  <p>Do you have any queries or suggestions? <a href="mailto:">Online-Store@gmail.com</a>
                   </p>
                   <p>If you need support? Just give us a call. <a href="">+92 3172240904</a>
                   </p>
@@ -114,7 +114,7 @@
             <div class="Shipping d-flex">
               <p>We ship with:</p>
               <div class="card-wrap ps-2">
-                <img src="images/dhl.png" alt="visa">
+                <img src="images/visa.jpg" alt="visa">
                 <img src="images/shippingcard.png" alt="mastercard">
               </div>
             </div>

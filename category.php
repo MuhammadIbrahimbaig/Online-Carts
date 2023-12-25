@@ -27,13 +27,19 @@ include 'header.php';
       
                  
                  ?> 
+<br>
+<br>
+<br>
 
-<div class="card" style="width: 18rem;">
+
+<div class="card " style="width: 18rem; ">
   <img src="admin/<?php echo $opt['prodimage'] ?>" class="card-img-top" alt="...">
-  <div class="card-body">
+  <div class="card-body  ">
     <h5 class="card-title"><?php echo $opt['prodname'] ?></h5>
     <p class="card-text"><?php echo $opt['Prod_Desc'] ?></p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Add to cart</a>
   </div>
 </div>
+
+<br>
                  <?php } ?>

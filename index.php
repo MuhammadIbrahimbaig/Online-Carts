@@ -144,7 +144,7 @@
                   </div>
                 </div>
               </div>
-               <!-- 5th cart -->
+               <!-- 5th cart
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
@@ -159,7 +159,7 @@
                     <h3 class="card-title text-uppercase">
                       <a href="#">black watch</a>
                     </h3>
-                    <span class="item-price text-primary">$750</span>
+                    <span class="item-price text-primary">$750</span> -->
                   </div>
                 </div>
               </div>
@@ -216,7 +216,7 @@
             <div class="col-lg-4 col-sm-12">
               <div class="card border-none me-3">
                 <div class="card-image">
-                  <img src="images/post-item3.jpg" alt="" class="img-fluid">
+                  <img src="images/post-item2.jpg" alt="" class="img-fluid">
                 </div>
               </div>
               <div class="card-body text-uppercase">
