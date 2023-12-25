@@ -25,7 +25,7 @@
                   <img src="../assets/images/logos/dark-logo.svg" width="180" alt="">
                 </a>
                 <p class="text-center">Your Social Campaigns</p>
-                <form action="#" method="POST">
+                <form action="index.php" method="POST">
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Username</label>
                     <input type="text" name="user" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -43,7 +43,7 @@
                     </div>
                     <a class="text-primary fw-bold" href="./index.html">Forgot Password ?</a>
                   </div>
-                  <button type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2" name="login">Sign In</button>
+                  <button type="submit" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2" name="login">login</button>
                   <div class="d-flex align-items-center justify-content-center">
                     <p class="fs-4 mb-0 fw-bold">New to Modernize?</p>
                     <a class="text-primary fw-bold ms-2" href="./authentication-register.html">Create an account</a>
@@ -80,10 +80,10 @@ if(isset($_POST['login'])){
     $_SESSION['user_name'] = $data['user_name'];
     // $_SESSION['role'] = $data['role'];
     if($_SESSION['user_name']== 'admin'){
-    header('location:index.php');
+        header("Location:index.php");
     }
     else{
-    header('location:login.php');
+        header("Location:login.php");
     }
   }
 
@@ -91,3 +91,4 @@ if(isset($_POST['login'])){
 
 
   ?>
+   
