@@ -1,4 +1,7 @@
+<?php
+session_start();
 
+?>
 <!doctype html>
 <html lang="en">
 
@@ -7,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Modernize premium</title>
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
-  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.min.css" />
 </head>
 
 <body>
@@ -22,7 +25,7 @@
             <div class="card mb-0">
               <div class="card-body">
                 <a href="./index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                  <img src="../assets/images/logos/dark-logo.svg" width="180" alt="">
+                  <img src="assets/images/logos/dark-logo.svg" width="180" alt="">
                 </a>
                 <p class="text-center">Your Social Campaigns</p>
                 <form action="#" method="POST">
@@ -69,9 +72,9 @@ include("config.php");
 
 if(isset($_POST['login'])){
   $email = $_POST['user'];
-  $password = $_POST ['pass'];
+  $password = $_POST['pass'];
 
-  $query = "SELECT * from users where user_name = '$email' AND passwordd = '$password'";
+  $query = "SELECT * from `users` where `user_name` = '$email' AND `passwordd` = '$password'";
 
   $result = mysqli_query($conn, $query);
   $data = mysqli_fetch_assoc($result);
@@ -79,12 +82,10 @@ if(isset($_POST['login'])){
     $_SESSION['user_id'] = $data['user_id'];
     $_SESSION['user_name'] = $data['user_name'];
     // $_SESSION['role'] = $data['role'];
-    if($_SESSION['user_name']== 'admin'){
+    if($_SESSION['user_name'] =='admin'){
     header('location:index.php');
     }
-    else{
-    header('location:login.php');
-    }
+ 
   }
 
 }
