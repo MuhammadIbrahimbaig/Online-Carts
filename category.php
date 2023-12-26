@@ -25,11 +25,14 @@ include 'header.php';
   <img src="admin/<?php echo $opt["prodimage"]?>" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title"><?php echo $opt["prodname"]?></h5>
-    <p class="card-text"><?php echo $opt["Prod_Desc"]?></p>
+    <p class="card-text text-primary "><?php echo $opt["Prod_Desc"] ?></p>
+    <p class="card-text text-dark "><?php echo $opt["prodprice"] ?></p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 </div>
+
+<!-- card ending -->
 <?php } ?>
 </div>
 </div>
