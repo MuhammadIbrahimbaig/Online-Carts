@@ -156,6 +156,9 @@
                   <a class="nav-link me-4 " href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link me-4 " href="cart.php">carts</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link me-4  " href="aboutus.php">About us</a>
                 </li>
                 <li class="nav-item">
