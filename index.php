@@ -59,7 +59,8 @@
       <div class="container">
         <div class="row">
           <div class="display-header d-flex justify-content-between pb-3">
-            <h2 class="display-7 text-dark text-uppercase">Hot Selling Products</h2>
+         
+           <h2 class="display-7 text-dark text-uppercase ">Trending Products</h2>
             <div class="btn-right">
               <a href="shop.php" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
             </div>
@@ -73,13 +74,13 @@
                     <img src="images/smartwatch2.webp" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
+                    <!-- <div class="cart-button d-flex">
                       <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
-                      <a href="#">Pink watch</a>
+                      <a href="category.php?id=1">Smart watch</a>
                     </h3>
                     <span class="item-price text-primary">$870</span>
                   </div>
@@ -92,13 +93,13 @@
                     <img src="images/02.png" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
+                    <!-- <div class="cart-button d-flex">
                       <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
-                      <a href="#">Heavy watch</a>
+                      <a href="category.php?id=4">Hodiee</a>
                     </h3>
                     <span class="item-price text-primary">$680</span>
                   </div>
@@ -111,13 +112,13 @@
                     <img src="images/mobile3.webp" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
+                    <!-- <div class="cart-button d-flex">
                       <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
-                      <a href="#">spotted watch</a>
+                      <a href="category.php?id=2">Mobile </a>
                     </h3>
                     <span class="item-price text-primary">$750</span>
                   </div>
@@ -130,13 +131,13 @@
                     <img src="images/image2.webp" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
+                    <!-- <div class="cart-button d-flex">
                       <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
-                      <a href="#">spotted watch</a>
+                      <a href="category.php?id=5">Shoes</a>
                     </h3>
                     <span class="item-price text-primary">$750</span>
                   </div>
@@ -149,9 +150,9 @@
                     <img src="images/mobile1.webp" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
+                    <!-- <div class="cart-button d-flex">
                       <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="card-detail d-flex justify-content-between pt-3">
                     <h3 class="card-title text-uppercase">
@@ -176,9 +177,7 @@
         <div class="row">
           <div class="display-header d-flex justify-content-between pb-3">
             <h2 class="display-7 text-dark text-uppercase">Latest Posts</h2>
-            <div class="btn-right">
-              <a href="blog.html" class="btn btn-medium btn-normal text-uppercase">Read Blog</a>
-            </div>
+         
           </div>
           <div class="post-grid d-flex flex-wrap justify-content-between">
             <div class="col-lg-4 col-sm-12">
@@ -216,7 +215,7 @@
             <div class="col-lg-4 col-sm-12">
               <div class="card border-none me-3">
                 <div class="card-image">
-                  <img src="images/post-item3.jpg" alt="" class="img-fluid">
+                  <img src="images/post item 3.jpg" alt="" class="img-fluid">
                 </div>
               </div>
               <div class="card-body text-uppercase">
@@ -252,7 +251,7 @@
                 <div class="swiper-slide text-center d-flex justify-content-center">
                   <div class="review-item col-md-10">
                     <i class="icon icon-review"></i>
-                    <blockquote>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi.”</blockquote>
+                    <blockquote> "This shopping cart streamlined the entire checkout process. From adding items to finalizing payment, everything was quick and efficient. A great online shopping experience!"</blockquote>
                     <div class="rating">
                       <svg class="star star-fill">
                         <use xlink:href="#star-fill"></use>
@@ -278,7 +277,7 @@
                 <div class="swiper-slide text-center d-flex justify-content-center">
                   <div class="review-item col-md-10">
                     <i class="icon icon-review"></i>
-                    <blockquote>“A blog is a digital publication that can complement a website or exist independently. A blog may include articles, short posts, listicles, infographics, videos, and other digital content.”</blockquote>
+                    <blockquote>Love the convenience of this shopping cart! The saved items feature and one-click checkout make it so easy to pick up where I left off and complete my purchase in no time."</blockquote>
                     <div class="rating">
                       <svg class="star star-fill">
                         <use xlink:href="#star-fill"></use>
