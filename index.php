@@ -15,7 +15,7 @@
                     <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
                   </div>
                 </div>
-                <div class="col-md-5">
+                  <div class="col-md-5">
                   <div class="image-holder">
                     <img src="images/banner-image.png" alt="banner">
                   </div>
@@ -147,16 +147,13 @@
               <div class="swiper-slide">
                 <div class="product-card position-relative">
                   <div class="image-holder">
-                    <img src="images/mobile1.webp" alt="product-item" class="img-fluid">
+                    <img src="images/Ap 02.png" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
-                    <!-- <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div> -->
                   </div>
                   <div class="card-detail d-flex justify-content-between pt-3">
                     <h3 class="card-title text-uppercase">
-                      <a href="#">black watch</a>
+                      <a href="#">Air Buds</a>
                     </h3>
                     <span class="item-price text-primary">$750</span>
                   </div>
