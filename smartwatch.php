@@ -1,116 +1,43 @@
 <?php
     include("header.php");
    ?>
-<section id="smart-watches" class="product-store padding-large position-relative">
-      <div class="container">
-        <div class="row">
-          <div class="display-header d-flex justify-content-between pb-3">
-            <h2 class="display-7 text-dark text-uppercase">Smart Watches</h2>
-            <div class="btn-right">
-              <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
-            </div>
-          </div>
-          <div class="swiper product-watch-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/product-item6.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">Pink watch</a>
-                    </h3>
-                    <span class="item-price text-primary">$870</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/product-item7.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">Heavy watch</a>
-                    </h3>
-                    <span class="item-price text-primary">$680</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/product-item8.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">spotted watch</a>
-                    </h3>
-                    <span class="item-price text-primary">$750</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/product-item9.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">black watch</a>
-                    </h3>
-                    <span class="item-price text-primary">$650</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-card position-relative">
-                  <div class="image-holder">
-                    <img src="images/product-item10.jpg" alt="product-item" class="img-fluid">
-                  </div>
-                  <div class="cart-concern position-absolute">
-                    <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div>
-                  </div>
-                  <div class="card-detail d-flex justify-content-between pt-3">
-                    <h3 class="card-title text-uppercase">
-                      <a href="#">black watch</a>
-                    </h3>
-                    <span class="item-price text-primary">$750</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+<div class="container">
+        <div class="row" id="row">
+           
         </div>
-      </div>
-      <div class="swiper-pagination position-absolute text-center"></div>
-    </section>
-
-
-
+    </div>
+    <script src="js/data.js"></script>
+    <script>
+        for(i of smartwatch){
+            $("#row").append(`
+            <div class="col-md-4 mt-5">
+                <div class="card text-center "id="outlinerem" style="width: 18rem;">
+                  <img src="image/${i.imgsrc}" class="card-img-top" alt="...">
+                  <button type="submit" class="btn btn-primary cardbtn" data-bs-toggle="tooltip" data-bs-placement="top" title="shopping now" ><a href="productDetail.html?type=smartwatch&id=${i.id}">
+            Shopping now</a>
+          </button>
+          <button type="submit" class="btn btn-primary cardbtn mt-2" data-bs-toggle="tooltip" data-bs-placement="top" title="campare now" ><a href="compare.html?type=smartwatc&id=${i.id}"><i class="fa-solid fa-code-campare"></i>
+            Campare</i></a>
+      </button>
+          
+                  <div class="card-body ">
+                    <p class="card-title text-primary">${i.title}</p>
+                    <p class="card-text mt-3 text-danger">Rs. ${i.price}</p>
+                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                    <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                    <i class="fa fa-star text-warning"  aria-hidden="true"></i>
+                    <p class="card-text mt-3 text-success"><i class="fa fa-circle" aria-hidden="true"> in the stock</i>
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            `)
+        }
+    </script>
     <?php
     include("footer.php");
    ?>
