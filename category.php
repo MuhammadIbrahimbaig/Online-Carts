@@ -27,7 +27,7 @@ include 'header.php';
     <h5 class="card-title"><?php echo $opt["prodname"]?></h5>
     <p class="card-text text-primary "><?php echo $opt["Prod_Desc"] ?></p>
     <p class="card-text text-dark "><?php echo $opt["prodprice"] ?></p>
-    <a href="#" class="btn btn- w-100"><i class="fa fa-shopping-cart" aria-hidden="true"></i>     Add to Cart</a>
+    <a href="#" class="btn btn-primary w-100"><i class="fa fa-shopping-cart" aria-hidden="true"></i>     Add to Cart</a>
   </div> 
 </div>
 </div>
