@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 29, 2023 at 08:13 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Dec 30, 2023 at 06:49 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -76,14 +76,14 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`prod_id`, `prodname`, `prodprice`, `prodimage`, `Prod_Desc`, `Prod_Category`) VALUES
-(46, 'Smart Watch', 4000, 'img/smartwatch.png', 'Mobile watch best quality', 1),
+(46, 'Smart Watch', 4000, 'img/smartwatch.png', 'Buy Dany Loop Pro Smart Watch Price in Pakistan', 1),
 (48, 'Mobile', 1900000, 'img/mobile1.webp', 'Smart phone best quality', 2),
 (49, 'Mobile', 34000, 'img/mobile2.webp', 'Smart phone best quality', 2),
 (50, 'Mobile', 50000, 'img/mobile3.webp', 'Smart phone best quality', 2),
 (51, 'smart watch', 6000, 'img/smartwatch2.webp', 'Buy Dany Loop Pro Smart Watch Price in Pakistan', 1),
 (52, 'Smart watch', 9000, 'img/smartwatch3.gif', 'Buy T10 Ultra Bluetooth Calling Watch Price in Pakistan', 1),
 (53, 'Smart watch', 9000, 'img/smartwatch4.webp', 'Buy S100 Pro Max Smart Watch With 4 Straps Price in Pakistan', 1),
-(55, 'Hodiee', 1300, 'img/01.png', 'Hoodies keep you warm and cozy! Update your wardrobe with our latest hoodies collection', 4),
+(55, 'Hodiee', 1300, 'img/01.png', 'Hoodies keep you warm and cozy! Buy Sweatshirts & Hoodies at Rad.', 4),
 (56, 'Hodiee', 1500, 'img/02.png', 'Brandsego is the leading online store for men\'s hoodies in Pakistan.', 4),
 (57, 'Hodiee', 5000, 'img/03.png', ' Slim Fit Winter High Necks For Men | Full Sleeve Warm Winter', 4),
 (58, 'Hodiee', 4090, 'img/04.png', ' Slim Fit Winter High Necks For Men | Full Sleeve Warm Winter', 4),
