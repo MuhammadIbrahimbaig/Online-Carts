@@ -74,14 +74,15 @@
                     <img src="images/smartwatch2.webp" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
-                    <!-- <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div> -->
+                    <div class="cart-button d-flex">
+                      <a href="#" class="btn btn-medium btn-black">Quick View   <i class="fa fa-eye" aria-hidden="true"></i></a>
+                    </div>
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
                       <a href="category.php?id=1">Smart watch</a>
                     </h3>
+                  
                     <span class="item-price text-primary">$870</span>
                   </div>
                 </div>
@@ -93,9 +94,9 @@
                     <img src="images/02.png" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
-                    <!-- <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div> -->
+                    <div class="cart-button d-flex">
+                    <a href="#" class="btn btn-medium btn-black">Quick View   <i class="fa fa-eye" aria-hidden="true"></i></a>
+                    </div>
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
@@ -112,12 +113,13 @@
                     <img src="images/mobile3.webp" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
-                    <!-- <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div> -->
+                  <div class="cart-button d-flex">
+                    <a href="#" class="btn btn-medium btn-black">Quick View   <i class="fa fa-eye" aria-hidden="true"></i></a>
+                    </div>
                   </div>
+                  
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
+                    <h3 class="card-title text-uppercase mt-3">
                       <a href="category.php?id=2">Mobile </a>
                     </h3>
                     <span class="item-price text-primary">$750</span>
@@ -131,12 +133,12 @@
                     <img src="images/image2.webp" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
-                    <!-- <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline"><use xlink:href="#cart-outline"></use></svg></a>
-                    </div> -->
+                  <div class="cart-button d-flex">
+                    <a href="#" class="btn btn-medium btn-black">Quick View   <i class="fa fa-eye" aria-hidden="true"></i></a>
+                    </div>
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                    <h3 class="card-title text-uppercase">
+                    <h3 class="card-title text-uppercase mt-3">
                       <a href="category.php?id=5">Shoes</a>
                     </h3>
                     <span class="item-price text-primary">$750</span>
@@ -150,6 +152,9 @@
                     <img src="images/Ap 02.png" alt="product-item" class="img-fluid">
                   </div>
                   <div class="cart-concern position-absolute">
+                  <div class="cart-button d-flex">
+                    <a href="#" class="btn btn-medium btn-black">Quick View   <i class="fa fa-eye" aria-hidden="true"></i></a>
+                    </div>
                   </div>
                   <div class="card-detail d-flex justify-content-between pt-3">
                     <h3 class="card-title text-uppercase">
