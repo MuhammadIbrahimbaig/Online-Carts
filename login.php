@@ -3,7 +3,7 @@ include("header.php");
 include("config.php");
 
 
-
+// backend Login
 
 if(isset($_POST['submit'])){
   $user_email = $_POST['user_email'];
@@ -30,7 +30,9 @@ if(isset($_SESSION['user_id'])){
 
 
   ?>
+  <!-- End  -->
   
+  <!-- Front end -->
   <section id="contact" class="contact ">
       <div class="container" data-aos="fade-up">
         <div class="section-header text-center fw-bolder ">
@@ -66,7 +68,7 @@ if(isset($_SESSION['user_id'])){
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
  <?php
  include("footer.php");
 ?>

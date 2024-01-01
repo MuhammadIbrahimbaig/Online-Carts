@@ -27,19 +27,19 @@ session_start();
                 <a href="./index.html" class="text-nowrap logo-img text-center d-block py-3 w-100">
                   <img src="assets/images/logos/dark-logo.svg" width="180" alt="">
                 </a>
-                <p class="text-center">Your Social Campaigns</p>
+                <p class="text-center">Online Carts Dashboard</p>
                 <form action="#" method="POST">
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Username</label>
-                    <input type="text" name="user" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="exampleInputEmail1" class="form-label" >Username</label>
+                    <input type="text" name="user" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
                   </div>
                   <div class="mb-4">
                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password"  name="pass" class="form-control" id="exampleInputPassword1">
+                    <input type="password"  name="pass" class="form-control" id="exampleInputPassword1" required>
                   </div>
                   <div class="d-flex align-items-center justify-content-between mb-4">
                     <div class="form-check">
-                      <input class="form-check-input primary" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <input class="form-check-input primary" type="checkbox" value="" id="flexCheckChecked" checked required>
                       <label class="form-check-label text-dark" for="flexCheckChecked">
                         Remeber this Device
                       </label>
