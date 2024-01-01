@@ -19,7 +19,8 @@
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="index.php" class="text-nowrap logo-img">
-            <img src="assets/images/logos/dark-logo.svg" width="180" alt="" />
+            <!-- <img src="assets/images/logos/dark-logo.svg" width="180" alt="" /> -->
+            <h1 class="text-primary">Admin panel</h1>
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -47,6 +48,13 @@
               <a class="sidebar-link" href="product.php" aria-expanded="false">
                 
                 <span class="hide-menu">product </span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="product_table.php" aria-expanded="false">
+                
+                <span class="hide-menu">Show table </span>
               </a>
             </li>
             
