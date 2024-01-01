@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 30, 2023 at 06:49 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Dec 31, 2023 at 06:38 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -77,12 +77,12 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`prod_id`, `prodname`, `prodprice`, `prodimage`, `Prod_Desc`, `Prod_Category`) VALUES
 (46, 'Smart Watch', 4000, 'img/smartwatch.png', 'Buy Dany Loop Pro Smart Watch Price in Pakistan', 1),
-(48, 'Mobile', 1900000, 'img/mobile1.webp', 'Smart phone best quality', 2),
-(49, 'Mobile', 34000, 'img/mobile2.webp', 'Smart phone best quality', 2),
-(50, 'Mobile', 50000, 'img/mobile3.webp', 'Smart phone best quality', 2),
+(48, 'Mobile', 1900000, 'img/mobile1.webp', 'Iphone xr yellow mobile phone on smart phone xr yellow mobile phone ', 2),
+(49, 'Mobile', 34000, 'img/mobile2.webp', 'Iphone xr yellow mobile phone on smart phone xr yellow mobile phone ', 2),
+(50, 'Mobile', 50000, 'img/mobile3.webp', 'Iphone xr yellow mobile phone on Similar Iphone xr yellow mobile phone ', 2),
 (51, 'smart watch', 6000, 'img/smartwatch2.webp', 'Buy Dany Loop Pro Smart Watch Price in Pakistan', 1),
 (52, 'Smart watch', 9000, 'img/smartwatch3.gif', 'Buy T10 Ultra Bluetooth Calling Watch Price in Pakistan', 1),
-(53, 'Smart watch', 9000, 'img/smartwatch4.webp', 'Buy S100 Pro Max Smart Watch With 4 Straps Price in Pakistan', 1),
+(53, 'Smart watch', 9000, 'img/smartwatch4.webp', 'Buy S100 Pro Max Smart Watch With 4 Straps Price ', 1),
 (55, 'Hodiee', 1300, 'img/01.png', 'Hoodies keep you warm and cozy! Buy Sweatshirts & Hoodies at Rad.', 4),
 (56, 'Hodiee', 1500, 'img/02.png', 'Brandsego is the leading online store for men\'s hoodies in Pakistan.', 4),
 (57, 'Hodiee', 5000, 'img/03.png', ' Slim Fit Winter High Necks For Men | Full Sleeve Warm Winter', 4),
@@ -97,7 +97,21 @@ INSERT INTO `products` (`prod_id`, `prodname`, `prodprice`, `prodimage`, `Prod_D
 (66, 'Hodiee', 2500, 'img/12.png', ' New fleece plain full sleves pull over winter hodiee for men ', 4),
 (67, 'Hodiee', 2500, 'img/AP 01.png', ' Audionic Airbud 550 Quad MIC ENC Earbuds, Gaming Mode, IPx4', 3),
 (68, 'Airbuds', 7500, 'img/AP 02.png', ' Audionic Airbud 550 Quad MIC ENC Earbuds, Gaming Mode, IPx4', 3),
-(69, 'Airbuds', 500, 'img/AP 03.png', ' Audionic Airbud 550 Quad MIC ENC Earbuds, Gaming Mode, IPx4', 3);
+(69, 'Airbuds', 500, 'img/AP 03.png', ' Audionic Airbud 550 Quad MIC ENC Earbuds, Gaming Mode, IPx4', 3),
+(71, 'Smart Watch', 1300, 'img/watch5.jpg', 'IWO | FK99 Smartwatch | Series 6 | Heart Rate Sensor | Pedometer | Bluetooth music | Push notifications | Smart ', 1),
+(72, 'Smart Watch', 1300, 'img/watch6.jpg', 'Xiaomi Mibro A1 | 1.28″ HD Display | 20 Sports Mode | Blood Oxygen Monitor | Heart Rate Sensor | Smart Watch', 1),
+(73, 'Smart Watch', 6000, 'img/watch7.jpg', 'Haylou GST | Silicone Strap | 22mm | Heart Rate Monitor | Blood Oxygen Monitor | Sleep Monitoring |Best quality', 1),
+(74, 'Smart Watch', 2300, 'img/watch8.jpg', 'HX68 Smartwatch | Bluetooth Call | Android & IOS | Heart Rate Sensor | G Sensor | Sleep Monitor | Smart Watch', 1),
+(75, 'Smart Watch', 2300, 'img/watch9.jpg', 'HX68 Smartwatch | Bluetooth Call | Android & IOS | Heart Rate Sensor | G Sensor | Sleep Monitor | Smart Watch', 1),
+(76, 'Smart Watch', 2300, 'img/watch10.jpg', 'HX68 Smartwatch | Bluetooth Call | Android & IOS | Heart Rate Sensor | G Sensor | Sleep Monitor | Smart Watch', 1),
+(77, 'Smart Watch', 3450, 'img/watch11.jpg', 'HX68 Smartwatch | Bluetooth Call | Android & IOS | Heart Rate Sensor | G Sensor | Sleep Monitor | Smart Watch', 1),
+(78, 'Smart Watch', 3450, 'img/about.webp', 'HX68 Smartwatch | Bluetooth Call | Android & IOS | Heart Rate Sensor | G Sensor | Sleep Monitor |', 1),
+(84, 'Smart Phone', 7650, 'img/mobile5.png', 'Iphone xr yellow mobile phone on Smart phone xr yellow mobile phone ', 2),
+(85, 'Smart Phone', 29000, 'img/mobile6.png', 'Iphone xr yellow mobile phone on Smart phone xr yellow mobile phone ', 2),
+(87, 'Smart Phone', 29000, 'img/mobile8.webp', 'Realme C51 RAM 4GB ROM 64GB Front Camera 5 MP Back Camera 50 MP + 0.08 MP ', 2),
+(90, 'Smart Phone', 59000, 'img/mobile7.webp', 'badgeTecno CAMON 20 8GB RAM-256GB ROM 5000MAH BATTERY PTA APPROVED ', 2),
+(91, 'Smart Phone', 59000, 'img/mobile5.webp', 'badgeTecno CAMON 20 8GB RAM-256GB ROM 5000MAH BATTERY PTA APPROVED', 2),
+(94, 'Shoes', 2450, 'img/image2.webp', 'best shoes ', 5);
 
 -- --------------------------------------------------------
 
@@ -202,7 +216,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
 
 --
 -- AUTO_INCREMENT for table `users`
