@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 31, 2023 at 06:38 PM
+-- Generation Time: Jan 01, 2024 at 06:42 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -134,14 +134,13 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `user_name`, `email`, `passwordd`, `address`, `Phone`, `role`) VALUES
-(1, 'asfand', 'asfahan@gmail.com', '12345', 'home', '12345678988', 2),
+(1, 'Asfhan', 'asfahan@gmail.com', '12345', 'home', '12345678988', 2),
 (2, 'wardah', 'xyz@gmail.com', 'abc123', 'karachi', '12345678901', 2),
 (3, 'Ibrahim', 'xyz@gmail.com', 'abc123', 'lahore', '12345678908', 2),
 (4, 'Ibrahim', 'xyz@gmail.com', 'abc123', 'lahore', '12345678908', 2),
 (5, 'asfand', 'xyz@gmail.com', '123', 'lahore', '12345678988', 2),
 (6, 'admin', 'admin@gmail.com', 'admin123', 'karachi', '03124567894', 1),
 (7, 'Mubsir', 'mubsir@gmail.com', 'mubsir', 'I block', '03172239904', 2),
-(8, 'sufi', 'sufi@gmail.com', 'sufi', 'bahria', '424224424', 2),
 (9, 'Arbaz', 'arbaz@gmail.com', '6767', 'aotech', '7654', 1),
 (10, 'talha', 'talha@gmail.com', 'talha', 'new', '98768868686', 2),
 (11, 'hina', 'hina@gmail.com', 'hina', '234567', '0987654', 2),
@@ -151,7 +150,8 @@ INSERT INTO `users` (`user_id`, `user_name`, `email`, `passwordd`, `address`, `P
 (15, 'niazi', 'nizazi@gmail.com', '234', '2345', '2334', NULL),
 (16, 'xubi', 'xubi@gmail.com', 'xubi', 'home', '098765', NULL),
 (17, 'Ibrahim', 'xyz@gmail.com', '112233', 'street', '12345678988', 2),
-(18, 'kuch bhiii', 'kuchbhi@gmail.com', 'kuchbhi', 'lahore', '090078601', 2);
+(18, 'kuch bhiii', 'kuchbhi@gmail.com', 'kuchbhi', 'lahore', '090078601', 2),
+(19, 'Company', 'hsc@gmail.com', 'hsc', 'Port Qasim', '+91 9399065', 2);
 
 -- --------------------------------------------------------
 
@@ -216,13 +216,13 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
+  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `user_role`
