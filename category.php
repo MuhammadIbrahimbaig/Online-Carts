@@ -22,7 +22,7 @@ include 'header.php';
               
                     <div class="col-lg-3">
                  <div class="card">
-  <img src="admin/<?php echo $opt["prodimage"]?>" class="card-img-top" alt="...">
+  <img src="addmin/<?php echo $opt["prodimage"]?>" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title"><?php echo $opt["prodname"]?></h5>
     <p class="card-text text-primary "><?php echo $opt["Prod_Desc"] ?></p>

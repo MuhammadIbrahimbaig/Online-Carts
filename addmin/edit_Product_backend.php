@@ -17,9 +17,7 @@ $mypath= "img/".$imgname;
 
 move_uploaded_file($temppath,$mypath);
 
-   //  $query = "INSERT INTO `products` (`prodname`,`prodprice`, `prodimage`,`prod_desc`,`prod_category`)
-   //  VALUES ('$prodname','$prodprice', '$mypath','$Prod_Desc','$Prod_Category')";
-    
+   
    $query = "UPDATE `products` SET `prodname`='$prodname',`prodprice`='$prodprice',`prodimage`='$mypath',`Prod_Desc`='$Prod_Desc',`Prod_Category`='$Prod_Category' WHERE `prod_id` ='$id'";
 
 
