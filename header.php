@@ -1,4 +1,7 @@
+<?php 
+session_start();
 
+?>
 
 <!DOCTYPE html>
 <html>
@@ -155,9 +158,7 @@
                 <li class="nav-item">
                   <a class="nav-link me-4 " href="index.php">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4 " href="cart.php">carts</a>
-                </li>
+                
                 <li class="nav-item">
                   <a class="nav-link me-4  " href="aboutus.php">About us</a>
                 </li>
@@ -168,22 +169,9 @@
                    <a class="nav-link me-4" href="service.php">Services</a>
                 </li>
                
-
-         
-         <li class="nav-item dropdown">
-                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button"  aria-expanded="false">Account</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="login.php" class="dropdown-item">Login</a>
-                    </li>
-                    <li>
-                      <a href="signup.php" class="dropdown-item">signup</a>
-                    </li>
-                  </ul>
-                </li>
-                <!-- drop down collection -->
+             <!-- drop down collection -->
                 <!-- miss -->
-        <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categories
           </a>
@@ -201,12 +189,40 @@
             
 ?>
     <li><a class="dropdown-item" href="category.php?id=<?php echo $opt['Cat_Id'] ?> "><?php echo $opt['Category'] ?></a>
-</li>
-
 <?php 
 }
  ?>   
+</li></ul>
+         <?php 
+          if (!isset($_SESSION['name'])){
+         ?>
+         <li class="nav-item dropdown">
+                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button"  aria-expanded="false">Account</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="login.php" class="dropdown-item">Login</a>
+                    </li>
+                    <li>
+                      <a href="signup.php" class="dropdown-item">signup</a>
+                    </li>
+                  </ul>
+                </li> 
+                <?php }
+                else {
+                ?>
+          <li class="nav-item dropdown">
+                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button"  aria-expanded="false"><?php echo $_SESSION['name'] ?>
+                  <i class="fa-solid fa-user"></i>
+                </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="logout.php" class="dropdown-item">logout</a>
+                    </li>
+                </ul> </li>
+                <?php } ?>
+   
 
+                
 <!-- end miss -->
                 <!-- End dropdown  -->
 

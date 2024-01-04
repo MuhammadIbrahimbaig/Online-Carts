@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("config.php");
 $user_email = $_POST["user_email"];
 $user_password = $_POST["user_password"];
@@ -6,13 +7,21 @@ $user_password = $_POST["user_password"];
 $sql="SELECT * FROM users where email = '$user_email' AND passwordd = '$user_password'";
 
 $result = mysqli_query($conn,$sql);
-$num = mysqli_num_rows($result);
+$num = mysqli_fetch_assoc($result);
 
- if ($num ==  1) {
+ if ($num) {
+$_SESSION['name']= $num['user_name'];
+$_SESSION['email']= $num['email'];
+$_SESSION['role']= $num['role'];
+$_SESSION['img']= $num['user_image'];
+
+if($_SESSION['role'] == 2 ){
+
     echo "<script>
     alert('User login Successfully'); 
     window.location.href = 'index.php';</script>";
-    
+       
+}
  }
  else {
     echo "<script>

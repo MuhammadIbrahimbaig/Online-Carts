@@ -51,6 +51,11 @@
                 </div>
                 <br>
                 <br>
+                <div class="col-md-12 form-group mt-3 mt-md-0">
+                    <input type="file" class="form-control" name="image" required>
+                </div>
+                <br>
+                <br>
              
                 <!-- role dropdown -->
                 <div class="col-md-12 form-group mt-3 mt-md-0">
@@ -77,9 +82,14 @@
       $address = $_POST['address'];
       $phone = $_POST['phone'];
       $role_id = $_POST['user_role'];
-
-      $query = "INSERT INTO `users`(`user_name`, `email`, `passwordd`, `address`, `Phone`, `role`)
-       values ('$user_name','$email','$password','$address','$phone','2')";
+      $img = $_FILES["image"];
+      $imgname= $img['name'];
+      $temppath = $img['tmp_name'];
+      $mypath= "../addmin/assets/images/".$imgname;
+      
+      move_uploaded_file($temppath,$mypath);
+      $query = "INSERT INTO `users`(`user_name`, `email`, `passwordd`, `address`, `Phone`, `role`,`user_image`)
+       values ('$user_name','$email','$password','$address','$phone','2', '$mypath')";
 
       $result = mysqli_query($conn, $query);
       echo "<script>
