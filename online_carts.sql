@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 05, 2024 at 06:31 PM
+-- Generation Time: Jan 07, 2024 at 06:06 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -114,7 +114,13 @@ INSERT INTO `products` (`prod_id`, `prodname`, `prodprice`, `prodimage`, `Prod_D
 (40, 'Hoodie', 800, 'assets/images/09.png', 'Shop high quality Mens Hoodies online Shopping at the best price in Pakistan. ', 4),
 (41, 'Hoodie', 800, 'assets/images/10.png', 'Shop high quality Mens Hoodies online Shopping at the best price in Pakistan. ', 4),
 (42, 'Hoodie', 2300, 'assets/images/11.png', 'Shop high quality Mens Hoodies online Shopping at the best price in Pakistan. ', 4),
-(43, 'Hoodie', 2300, 'assets/images/12.png', 'Shop high quality Mens Hoodies online Shopping at the best price in Pakistan. ', 4);
+(43, 'Hoodie', 2300, 'assets/images/12.png', 'Shop high quality Mens Hoodies online Shopping at the best price in Pakistan. ', 4),
+(44, 'Shoes', 4000, 'assets/images/shoe1.jpeg', ' Fully Lined Supple Glove Leather Interior .', 5),
+(46, 'Shoes', 3490, 'assets/images/shoe3.jpeg', 'Fully Lined Supple Glove Leather Interior .', 5),
+(47, 'Shoes', 1490, 'assets/images/shoe4.jpeg', 'Fully Lined Supple Glove Sports Interior .', 5),
+(48, 'Shoes', 1490, 'assets/images/shoe5.jpeg', 'Fully Lined Supple Glove Sports Interior .', 5),
+(49, 'Shoes', 5490, 'assets/images/shoe6.jpeg', 'Fully Lined Supple Glove Sports Interior .', 5),
+(53, 'Shoes', 6003, 'assets/images/shoe2.jpeg', 'Fully Lined Supple Glove Leather Interior .', 5);
 
 -- --------------------------------------------------------
 
@@ -153,8 +159,7 @@ INSERT INTO `users` (`user_id`, `user_name`, `email`, `passwordd`, `address`, `P
 (15, 'niazi', 'nizazi@gmail.com', '234', '2345', '2334', NULL),
 (16, 'xubi', 'xubi@gmail.com', 'xubi', 'home', '098765', NULL),
 (17, 'Ibrahim', 'xyz@gmail.com', '112233', 'street', '12345678988', 2),
-(18, 'kuch bhiii', 'kuchbhi@gmail.com', 'kuchbhi', 'lahore', '090078601', 2),
-(19, 'Company', 'hsc@gmail.com', 'hsc', 'Port Qasim', '+91 9399065', 2);
+(18, 'kuch bhiii', 'kuchbhi@gmail.com', 'kuchbhi', 'lahore', '090078601', 2);
 
 -- --------------------------------------------------------
 
@@ -219,7 +224,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT for table `users`
