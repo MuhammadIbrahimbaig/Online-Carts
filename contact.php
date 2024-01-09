@@ -1,6 +1,40 @@
 <?php
 include("header.php");
 ?>
+<script>
+  
+// contact us foarm validation start
+$("document").ready(function(){
+    $("#contactus").validate({
+       rules:
+       {
+        username:"required",
+        lastname:"required",
+        password:{
+            required:true,
+            minlength:8
+        },
+        
+        email:{
+            required:true,
+            email:true
+        },
+
+       },
+       Messages:
+       {
+        username:"please enter your name",
+        password:"please enter your password",
+        lastname:"please enter your lastname",
+        email:"please enter your email address",
+
+       }
+
+    
+    })
+});
+// contact us form validation end
+</script>
 
 <!-- contact_us -->
 <div class="container mt-5 ">
@@ -51,6 +85,5 @@ include("header.php");
 <?php
 include("footer.php");
 ?>
-
 
 
