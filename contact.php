@@ -13,20 +13,21 @@ if (isset($_POST["submit"])) {
   $password = $_POST["username"];
 
   if (empty($username)) {
-    $nameerror="name is required";
+    $nameerror="User Name is required";
   }
   if (empty($lastname)) {
-    $lastnameerror="name is required";
+    $lastnameerror="Last name is required";
   }
   if (empty($email)) {
-    $emailerror="email is required";
+    $emailerror="Email is required";
   }
   if (empty($password)) {
-    $passworderror="password is required";
+    $passworderror="Password is required";
   }
 }
 
 ?>
+<!-- front end contact page -->
 <!-- contact_us -->
 <div class="container mt-5 ">
         <div class="row gx-5 gy-5">
