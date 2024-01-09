@@ -65,6 +65,7 @@
               <a href="shop.php" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
             </div>
           </div>
+          
           <!-- 1st Cart -->
           <div class="swiper product-watch-swiper">
             <div class="swiper-wrapper">
@@ -75,12 +76,12 @@
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
-                      <a href="#" class="btn btn-medium btn-black">Quick View   <i class="fa fa-eye" aria-hidden="true"></i></a>
+                      <a href="category.php?id=1" class="btn btn-medium btn-black">Shop Now   <i class="fa fa-eye" aria-hidden="true"></i></a>
                     </div>
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
-                      <a href="category.php?id=1">Smart watch</a>
+                      <a href="">Smart watch</a>
                     </h3>
                   
                     <span class="item-price text-primary">$870</span>
@@ -95,12 +96,12 @@
                   </div>
                   <div class="cart-concern position-absolute">
                     <div class="cart-button d-flex">
-                    <a href="#" class="btn btn-medium btn-black">Quick View   <i class="fa fa-eye" aria-hidden="true"></i></a>
+                    <a href="category.php?id=4" class="btn btn-medium btn-black">Shop Now   <i class="fa fa-eye" aria-hidden="true"></i></a>
                     </div>
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
                     <h3 class="card-title text-uppercase">
-                      <a href="category.php?id=4">Hodiee</a>
+                      <a href="">Hodiee</a>
                     </h3>
                     <span class="item-price text-primary">$680</span>
                   </div>
@@ -114,7 +115,7 @@
                   </div>
                   <div class="cart-concern position-absolute">
                   <div class="cart-button d-flex">
-                    <a href="#" class="btn btn-medium btn-black">Quick View   <i class="fa fa-eye" aria-hidden="true"></i></a>
+                    <a href="category.php?id=2" class="btn btn-medium btn-black">Shop Now   <i class="fa fa-eye" aria-hidden="true"></i></a>
                     </div>
                   </div>
                   
@@ -134,7 +135,7 @@
                   </div>
                   <div class="cart-concern position-absolute">
                   <div class="cart-button d-flex">
-                    <a href="#" class="btn btn-medium btn-black">Quick View   <i class="fa fa-eye" aria-hidden="true"></i></a>
+                    <a href="category.php?id=5" class="btn btn-medium btn-black">Shop Now   <i class="fa fa-eye" aria-hidden="true"></i></a>
                     </div>
                   </div>
                   <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
@@ -153,7 +154,7 @@
                   </div>
                   <div class="cart-concern position-absolute">
                   <div class="cart-button d-flex">
-                    <a href="#" class="btn btn-medium btn-black">Quick View   <i class="fa fa-eye" aria-hidden="true"></i></a>
+                    <a href="category.php?id=3" class="btn btn-medium btn-black">Shop Now   <i class="fa fa-eye" aria-hidden="true"></i></a>
                     </div>
                   </div>
                   <div class="card-detail d-flex justify-content-between pt-3">

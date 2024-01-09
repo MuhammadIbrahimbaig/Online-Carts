@@ -56,9 +56,15 @@
                 
                 <span class="hide-menu">Show table </span>
               </a>
+
             </li>
-            
+            <li class="sidebar-item">
            
+            <a class="sidebar-link" href="mobile.php.php" aria-expanded="false">
+                
+                <span class="hide-menu">mobile </span>
+              </a>
+</li>
           </ul>
         
         </nav>

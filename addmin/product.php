@@ -23,7 +23,7 @@
         
         <input class="form-control p-1 mt-2" placeholder="ProductName" type="text"  name="prodname" required>
         <input class="form-control p-1 mt-2" placeholder="ProductPrice" type="text"  name="prodprice" required>
-        <input class="form-control p-1 mt-2" placeholder="Product Image" type="file"  name="prodimage" required>
+        <input class="form-control p-1 mt-2" placeholder="Product Image" type="file"  name="prodimage" required >
         <input class="form-control p-1 mt-2" placeholder="Product Description" type="text"  name="Prod_Desc" required>
         <br>
         
