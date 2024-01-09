@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 07, 2024 at 06:06 PM
+-- Generation Time: Jan 09, 2024 at 10:35 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -120,7 +120,9 @@ INSERT INTO `products` (`prod_id`, `prodname`, `prodprice`, `prodimage`, `Prod_D
 (47, 'Shoes', 1490, 'assets/images/shoe4.jpeg', 'Fully Lined Supple Glove Sports Interior .', 5),
 (48, 'Shoes', 1490, 'assets/images/shoe5.jpeg', 'Fully Lined Supple Glove Sports Interior .', 5),
 (49, 'Shoes', 5490, 'assets/images/shoe6.jpeg', 'Fully Lined Supple Glove Sports Interior .', 5),
-(53, 'Shoes', 6003, 'assets/images/shoe2.jpeg', 'Fully Lined Supple Glove Leather Interior .', 5);
+(55, 'Shoes', 500, 'assets/images/shoe8.webp', 'Fully Lined Supple Glove Leather Interior .', 5),
+(58, 'Shoes', 3000, 'assets/images/shoe7.jpeg', 'Fully Lined Supple Glove Leather Interior .', 5),
+(59, 'Shoes', 3000, 'assets/images/shoe2.jpg', 'Fully Lined Supple Glove Leather Interior .', 5);
 
 -- --------------------------------------------------------
 
@@ -224,7 +226,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `users`

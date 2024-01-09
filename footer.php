@@ -1,3 +1,5 @@
+
+<center>
 <footer id="footer" class="overflow-hidden ">
       <div class="container">
         <div class="row">
@@ -107,34 +109,15 @@
       </div>
       <hr>
     </footer>
-    <div id="footer-bottom">
-      <div class="container">
-        <div class="row d-flex flex-wrap justify-content-between">
-          <div class="col-md-4 col-sm-6">
-            <div class="Shipping d-flex">
-              <p>We ship with:</p>
-              <div class="card-wrap ps-2">
-                <img src="images/visa.jpg" alt="visa">
-                <img src="images/shippingcard.png" alt="mastercard">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="payment-method d-flex">
-              <p>Payment options:</p>
-              <div class="card-wrap ps-2">
-                <img src="images/visa.jpg" alt="visa">
-                <img src="images/mastercard.jpg" alt="mastercard">
-                <img src="images/paypal.jpg" alt="paypal">
-              </div>
-            </div>
-          </div>
+   
+          <!-- <center> -->
           <div class="col-md-4 col-sm-6">
             <div class="copyright">
               <p>© Copyright 2023 Online Carts</a> 
               </p>
             </div>
           </div>
+          </center>
         </div>
       </div>
     </div>
