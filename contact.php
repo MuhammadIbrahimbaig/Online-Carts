@@ -1,41 +1,9 @@
 <?php
 include("header.php");
 ?>
-<script>
-  
-// contact us foarm validation start
-$("document").ready(function(){
-    $("#contactus").validate({
-       rules:
-       {
-        username:"required",
-        lastname:"required",
-        password:{
-            required:true,
-            minlength:8
-        },
-        
-        email:{
-            required:true,
-            email:true
-        },
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 
-       },
-       Messages:
-       {
-        username:"please enter your name",
-        password:"please enter your password",
-        lastname:"please enter your lastname",
-        email:"please enter your email address",
-
-       }
-
-    
-    })
-});
-// contact us form validation end
-</script>
-
+<script src="js/data.js"></script>
 <!-- contact_us -->
 <div class="container mt-5 ">
         <div class="row gx-5 gy-5">
@@ -53,17 +21,18 @@ $("document").ready(function(){
             <div class="col-md-6 col-xxl-6 col-lg-6 col-12 ">
                 
                   <form id="contactus">
+                    <br>
                   <label ><b>First name</b></label> 
-                      <input type="text" name="username" class="mt-5 form-control " placeholder="First name" aria-label="First name"  required>
+                      <input type="text" name="username" class="mt-5 form-control " placeholder="First name" aria-label="First name"  >
                       <br>
                     <label ><b>Last name</b></label>
-                      <input type="text" name="lastname" class="form-control" placeholder="Last name" aria-label="Last name"  required>
+                      <input type="text" name="lastname" class="form-control" placeholder="Last name" aria-label="Last name"  >
                       <br>
                     <label><b>Email</b></label>
-                    <input type="email" name="email" class="form-control " placeholder="Email Address" aria-label="email"  required>
+                    <input type="email" name="email" class="form-control " placeholder="Email Address" aria-label="email" >
                     <br>
                     <label><b>password</b></label>
-                    <input type="password"  name="password" class="form-control " placeholder="Enter password" aria-label="password"  required>
+                    <input type="password"  name="password" class="form-control " placeholder="Enter password" aria-label="password"  >
                     <!-- <button type="submit" class="btn btn-primary  mt-4">submit</button> -->
                   <br>
                   
