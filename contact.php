@@ -1,9 +1,32 @@
 <?php
 include("header.php");
 ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+<?php
+$nameerror="";
+$lastnameerror="";
+$emailerror="";
+$passworderror="";
+if (isset($_POST["submit"])) {
+  $username = $_POST["username"];
+  $lastname = $_POST["username"];
+  $email = $_POST["username"];
+  $password = $_POST["username"];
 
-<script src="js/data.js"></script>
+  if (empty($username)) {
+    $nameerror="name is required";
+  }
+  if (empty($lastname)) {
+    $lastnameerror="name is required";
+  }
+  if (empty($email)) {
+    $emailerror="email is required";
+  }
+  if (empty($password)) {
+    $passworderror="password is required";
+  }
+}
+
+?>
 <!-- contact_us -->
 <div class="container mt-5 ">
         <div class="row gx-5 gy-5">
@@ -20,19 +43,26 @@ include("header.php");
             <!-- form layout -->
             <div class="col-md-6 col-xxl-6 col-lg-6 col-12 ">
                 
-                  <form id="contactus">
+                  <form id="contactus" method="POST">
                     <br>
                   <label ><b>First name</b></label> 
                       <input type="text" name="username" class="mt-5 form-control " placeholder="First name" aria-label="First name"  >
+                      <span style="color: red"><?php echo $nameerror?></span>
                       <br>
                     <label ><b>Last name</b></label>
                       <input type="text" name="lastname" class="form-control" placeholder="Last name" aria-label="Last name"  >
+                      <span style="color: red"><?php echo $lastnameerror?></span>
+
                       <br>
                     <label><b>Email</b></label>
                     <input type="email" name="email" class="form-control " placeholder="Email Address" aria-label="email" >
+                    <span style="color: red"><?php echo $emailerror?></span>
+
                     <br>
                     <label><b>password</b></label>
                     <input type="password"  name="password" class="form-control " placeholder="Enter password" aria-label="password"  >
+                    <span style="color: red"><?php echo $passworderror?></span>
+
                     <!-- <button type="submit" class="btn btn-primary  mt-4">submit</button> -->
                   <br>
                   
