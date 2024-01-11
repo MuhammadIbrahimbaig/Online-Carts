@@ -17,7 +17,8 @@ session_start();
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- font link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -219,6 +220,15 @@ session_start();
                       <a href="logout.php" class="dropdown-item">logout</a>
                     </li>
                 </ul> </li>
+                <?php
+        $count = 0;
+        if (isset($_SESSION['cart'])) {
+          $count = count($_SESSION['cart']);
+        }
+
+
+        ?>
+        <button class ="btn btn-primary"><a href="mycart.php"><i class="fa-solid fa-cart-shopping"></i><?php echo "( $count  )"?></a></button>
                 <?php } ?>
    
 

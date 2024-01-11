@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 09, 2024 at 06:41 AM
+-- Generation Time: Jan 11, 2024 at 07:15 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -55,6 +55,41 @@ INSERT INTO `categories` (`Cat_Id`, `Category`) VALUES
 (3, 'airpods'),
 (4, 'hodiee'),
 (5, 'shoes');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact_us`
+--
+
+CREATE TABLE `contact_us` (
+  `id` int(11) NOT NULL,
+  `firstname` varchar(200) DEFAULT NULL,
+  `lastname` varchar(200) DEFAULT NULL,
+  `email` varchar(200) DEFAULT NULL,
+  `phone` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `contact_us`
+--
+
+INSERT INTO `contact_us` (`id`, `firstname`, `lastname`, `email`, `phone`) VALUES
+(1, 'asfand', 'shahmeer', 'muhammad@gmail.com', '1234567');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order_manager`
+--
+
+CREATE TABLE `order_manager` (
+  `id` int(11) NOT NULL,
+  `Full_Name` varchar(100) DEFAULT NULL,
+  `Phone_No` int(11) DEFAULT NULL,
+  `Address` varchar(100) DEFAULT NULL,
+  `Pay_Mode` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -144,7 +179,6 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`user_id`, `user_name`, `email`, `passwordd`, `address`, `Phone`, `role`) VALUES
 (1, 'Asfhan', 'asfahan@gmail.com', '12345', 'home', '12345678988', 2),
-(2, 'wardah', 'xyz@gmail.com', 'abc123', 'karachi', '12345678901', 2),
 (3, 'Ibrahim', 'xyz@gmail.com', 'abc123', 'lahore', '12345678908', 2),
 (4, 'Ibrahim', 'xyz@gmail.com', 'abc123', 'lahore', '12345678908', 2),
 (5, 'asfand', 'xyz@gmail.com', '123', 'lahore', '12345678988', 2),
@@ -160,6 +194,20 @@ INSERT INTO `users` (`user_id`, `user_name`, `email`, `passwordd`, `address`, `P
 (16, 'xubi', 'xubi@gmail.com', 'xubi', 'home', '098765', NULL),
 (17, 'Ibrahim', 'xyz@gmail.com', '112233', 'street', '12345678988', 2),
 (18, 'kuch bhiii', 'kuchbhi@gmail.com', 'kuchbhi', 'lahore', '090078601', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_orders`
+--
+
+CREATE TABLE `user_orders` (
+  `id` int(11) NOT NULL,
+  `Order_Id` int(11) DEFAULT NULL,
+  `Item_Name` varchar(200) DEFAULT NULL,
+  `Price` int(11) DEFAULT NULL,
+  `Quantity` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -191,6 +239,18 @@ ALTER TABLE `categories`
   ADD PRIMARY KEY (`Cat_Id`);
 
 --
+-- Indexes for table `contact_us`
+--
+ALTER TABLE `contact_us`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `order_manager`
+--
+ALTER TABLE `order_manager`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
@@ -203,6 +263,12 @@ ALTER TABLE `products`
 ALTER TABLE `users`
   ADD PRIMARY KEY (`user_id`),
   ADD KEY `role` (`role`);
+
+--
+-- Indexes for table `user_orders`
+--
+ALTER TABLE `user_orders`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `user_role`
@@ -221,6 +287,18 @@ ALTER TABLE `categories`
   MODIFY `Cat_Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
+-- AUTO_INCREMENT for table `contact_us`
+--
+ALTER TABLE `contact_us`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `order_manager`
+--
+ALTER TABLE `order_manager`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
@@ -231,6 +309,12 @@ ALTER TABLE `products`
 --
 ALTER TABLE `users`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- AUTO_INCREMENT for table `user_orders`
+--
+ALTER TABLE `user_orders`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `user_role`

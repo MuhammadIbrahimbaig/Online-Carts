@@ -5,28 +5,6 @@ include("config.php");
 
 // backend Login
 
-if(isset($_POST['submit'])){
-  $user_email = $_POST['user_email'];
-  $user_password = $_POST ['user_password'];
-
-  $query = "SELECT * from users where user_email = '$user_email' AND user_password = '$user_password'";
-
-  $result = mysqli_query($conn, $query);
-  $data = mysqli_fetch_array($result);
-  if(mysqli_num_rows($result) > 0){
-    $_SESSION['user_id'] = $data['id'];
-    $_SESSION['user_name'] = $data['user_name'];
-    echo "<script>window.location.href = 'index.php';</script>";
-  }
-  else{
-    echo "<div class='alert alert-danger w-75 mt-5 mx-auto' role='alert'>
-    Username or password is incorrect
-  </div>";
-  }
-}
-if(isset($_SESSION['user_id'])){
-  echo "<script>window.location.href = 'index.php';</script>";
-}
 
 
   ?>
