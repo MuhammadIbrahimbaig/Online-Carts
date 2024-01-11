@@ -5,7 +5,7 @@ include("header.php");
 $nameerror="";
 $lastnameerror="";
 $emailerror="";
-$passworderror="";
+$phoneerror="";
 if (isset($_POST["submit"])) {
   $username = $_POST["username"];
   $lastname = $_POST["username"];
@@ -21,8 +21,8 @@ if (isset($_POST["submit"])) {
   if (empty($email)) {
     $emailerror="Email is required";
   }
-  if (empty($password)) {
-    $passworderror="Password is required";
+  if (empty($phone)) {
+    $phoneerror="number is required";
   }
 }
 
@@ -44,7 +44,7 @@ if (isset($_POST["submit"])) {
             <!-- form layout -->
             <div class="col-md-6 col-xxl-6 col-lg-6 col-12 ">
                 
-                  <form id="contactus" method="POST">
+                  <form id="contactus" method="POST" action="contactus_backend.php">
                     <br>
                   <label ><b>First name</b></label> 
                       <input type="text" name="username" class="mt-5 form-control " placeholder="First name" aria-label="First name"  >
@@ -60,9 +60,9 @@ if (isset($_POST["submit"])) {
                     <span style="color: red"><?php echo $emailerror?></span>
 
                     <br>
-                    <label><b>password</b></label>
-                    <input type="password"  name="password" class="form-control " placeholder="Enter password" aria-label="password"  >
-                    <span style="color: red"><?php echo $passworderror?></span>
+                    <label><b>phone no</b></label>
+                    <input type="tel"  name="phone" class="form-control " placeholder="Enter number" aria-label="phone no"  >
+                    <span style="color: red"><?php echo $phoneerror?></span>
 
                     <!-- <button type="submit" class="btn btn-primary  mt-4">submit</button> -->
                   <br>
