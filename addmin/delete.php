@@ -6,7 +6,7 @@ $delete_result = mysqli_query($conn,$delete_query);
 
 if ($delete_result) {
     echo "ok delete";
-    header("Location: table.php");
+    header("Location: product_table.php");
 
 }
 else {

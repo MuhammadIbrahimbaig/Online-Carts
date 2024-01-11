@@ -1,7 +1,7 @@
 <?php
 include("header.php");
 include("config.php");
-$query = "SELECT * FROM products" ;
+$query = "SELECT * FROM products where prod_category = 1" ;
 $result = mysqli_query($conn,$query);
 ?>
 
@@ -11,7 +11,7 @@ $result = mysqli_query($conn,$query);
             <tr>
                 <br>
                 <th>Product_ID</th>
-                    <th>category name</th>
+                    <th>product name</th>
                     <th>Product Price</th>
                     <th>Product Image</th>
                     <th>Product Description</th>

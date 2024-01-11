@@ -51,11 +51,7 @@
                 </div>
                 <br>
                 <br>
-                <div class="col-md-12 form-group mt-3 mt-md-0">
-                    <input type="file" class="form-control" name="image" required>
-                </div>
-                <br>
-                <br>
+                
              
                 <!-- role dropdown -->
                 <div class="col-md-12 form-group mt-3 mt-md-0">
@@ -82,14 +78,11 @@
       $address = $_POST['address'];
       $phone = $_POST['phone'];
       $role_id = $_POST['user_role'];
-      $img = $_FILES["image"];
-      $imgname= $img['name'];
-      $temppath = $img['tmp_name'];
-      $mypath= "../addmin/assets/images/".$imgname;
+      
       
       move_uploaded_file($temppath,$mypath);
-      $query = "INSERT INTO `users`(`user_name`, `email`, `passwordd`, `address`, `Phone`, `role`,`user_image`)
-       values ('$user_name','$email','$password','$address','$phone','2', '$mypath')";
+      $query = "INSERT INTO `users`(`user_name`, `email`, `passwordd`, `address`, `Phone`, `role`)
+       values ('$user_name','$email','$password','$address','$phone','2')";
 
       $result = mysqli_query($conn, $query);
       echo "<script>
@@ -105,25 +98,7 @@
 
 </html>
 
-<!-- insert Working  -->
-<?php
-    if(isset($_POST["submit"])){
-      $user_role = 5;
-      $user_id = 1;
-      $name = $_POST['name'];
-      $email = $_POST['email'];
-      $password = $_POST['password'];
-      $address = $_POST['address'];
-      $phone = $_POST['phone'];
-   
 
-      $query = "Insert into users ( name, email, password, address , phone )
-       values ('$name','$email','$password','$address','$phone')";
-
-      $result = mysqli_query($conn, $query);
-      echo "<script>location.href = '/E project/Online-Carts/login.php';</script>";
-    }
-    ?>
 <?php
 include("footer.php")
 ?>

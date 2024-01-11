@@ -211,8 +211,8 @@ session_start();
                 else {
                 ?>
           <li class="nav-item dropdown">
-                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button"  aria-expanded="false"><?php echo $_SESSION['name'] ?>
-                  <i class="fa-solid fa-user"></i>
+            
+                  <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button"  aria-expanded="false"><i class="fa-solid fa-user"></i>  <?php echo $_SESSION['name'] ?>
                 </a>
                   <ul class="dropdown-menu">
                     <li>

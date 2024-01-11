@@ -58,13 +58,40 @@
               </a>
 
             </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu"> product category</span>
+            </li>
             <li class="sidebar-item">
-           
-            <a class="sidebar-link" href="mobile.php.php" aria-expanded="false">
+              <a class="sidebar-link" href="smart_watches.php" aria-expanded="false">
                 
-                <span class="hide-menu">mobile </span>
+                <span class="hide-menu">smart watches </span>
               </a>
-</li>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="smart_phone.php" aria-expanded="false">
+                
+                <span class="hide-menu">smart phone </span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="airbuds.php" aria-expanded="false">
+                
+                <span class="hide-menu">Airbuds </span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="hoodie.php" aria-expanded="false">
+                
+                <span class="hide-menu">hoodie </span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="shoes.php" aria-expanded="false">
+                
+                <span class="hide-menu">shoes </span>
+              </a>
+            </li>
           </ul>
         
         </nav>
