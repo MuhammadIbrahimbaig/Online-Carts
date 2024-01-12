@@ -82,7 +82,7 @@ include("config.php"); ?>
                             </div>
                             <div class="form-group">
                                 <label>Phone No:</label>
-                                <input type="number" name="Phone_No" class="form-control">
+                                <input type="tel" name="Phone_No" class="form-control">
                             </div>
                             <br>
                             <div class="form-check">
