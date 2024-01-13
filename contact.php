@@ -8,9 +8,9 @@ $emailerror="";
 $phoneerror="";
 if (isset($_POST["submit"])) {
   $username = $_POST["username"];
-  $lastname = $_POST["username"];
-  $email = $_POST["username"];
-  $password = $_POST["username"];
+  $lastname = $_POST["lastname"];
+  $email = $_POST["email"];
+  $password = $_POST["phone"];
 
   if (empty($username)) {
     $nameerror="User Name is required";
@@ -44,24 +44,24 @@ if (isset($_POST["submit"])) {
             <!-- form layout -->
             <div class="col-md-6 col-xxl-6 col-lg-6 col-12 ">
                 
-                  <form id="contactus" method="POST" action="contactus_backend.php">
+                  <form id="contactus" method="POST" action="">
                     <br>
                   <label ><b>First name</b></label> 
-                      <input type="text" name="username" class="mt-5 form-control " placeholder="First name" aria-label="First name"  >
+                      <input type="text" name="username" class="mt-5 form-control " placeholder="First name" aria-label="First name" >
                       <span style="color: red"><?php echo $nameerror?></span>
                       <br>
                     <label ><b>Last name</b></label>
-                      <input type="text" name="lastname" class="form-control" placeholder="Last name" aria-label="Last name"  >
+                      <input type="text" name="lastname" class="form-control" placeholder="Last name" aria-label="Last name" >
                       <span style="color: red"><?php echo $lastnameerror?></span>
 
                       <br>
                     <label><b>Email</b></label>
-                    <input type="email" name="email" class="form-control " placeholder="Email Address" aria-label="email" >
+                    <input type="email" name="email" class="form-control " placeholder="Email Address" aria-label="email">
                     <span style="color: red"><?php echo $emailerror?></span>
 
                     <br>
                     <label><b>phone no</b></label>
-                    <input type="tel"  name="phone" class="form-control " placeholder="Enter number" aria-label="phone no"  >
+                    <input type="tel"  name="phone" class="form-control " placeholder="Enter number" aria-label="phone no" >
                     <span style="color: red"><?php echo $phoneerror?></span>
 
                     <!-- <button type="submit" class="btn btn-primary  mt-4">submit</button> -->

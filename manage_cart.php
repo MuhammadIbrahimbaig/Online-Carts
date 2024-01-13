@@ -1,8 +1,8 @@
 <?php
 session_start();
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && $_SESSION['role'] == 2) {
     if (isset($_POST['Add_To_Cart'])) {
-        if (isset($_SESSION['cart'])) {
+        if (isset($_SESSION['cart'] )) {
             $myitems = array_column($_SESSION['cart'], 'Item_Name');
             if (in_array($_POST['Item_Name'], $myitems)) {
                 echo "<script>
@@ -47,4 +47,12 @@ window.location.href='mycart.php';
             }
         }
     }
+}
+else {
+    echo "
+    <script>
+        alert('LOGIN FIRST');
+        window.location.href='login.php';
+    </script>
+    ";
 }
