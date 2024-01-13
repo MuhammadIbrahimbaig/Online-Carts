@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 11, 2024 at 07:15 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Jan 13, 2024 at 01:47 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -160,6 +160,26 @@ INSERT INTO `products` (`prod_id`, `prodname`, `prodprice`, `prodimage`, `Prod_D
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `purchase`
+--
+
+CREATE TABLE `purchase` (
+  `id` int(11) NOT NULL,
+  `username` varchar(200) DEFAULT NULL,
+  `address` varchar(200) DEFAULT NULL,
+  `contact` varchar(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `purchase`
+--
+
+INSERT INTO `purchase` (`id`, `username`, `address`, `contact`) VALUES
+(6, 'muhammad asfahan', 'ORangi town karachi ', '');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -178,9 +198,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `user_name`, `email`, `passwordd`, `address`, `Phone`, `role`) VALUES
-(1, 'Asfhan', 'asfahan@gmail.com', '12345', 'home', '12345678988', 2),
 (3, 'Ibrahim', 'xyz@gmail.com', 'abc123', 'lahore', '12345678908', 2),
-(4, 'Ibrahim', 'xyz@gmail.com', 'abc123', 'lahore', '12345678908', 2),
 (5, 'asfand', 'xyz@gmail.com', '123', 'lahore', '12345678988', 2),
 (6, 'admin', 'admin@gmail.com', 'admin123', 'karachi', '03124567894', 1),
 (7, 'Mubsir', 'mubsir@gmail.com', 'mubsir', 'I block', '03172239904', 2),
@@ -258,6 +276,12 @@ ALTER TABLE `products`
   ADD KEY `Prod_Category` (`Prod_Category`);
 
 --
+-- Indexes for table `purchase`
+--
+ALTER TABLE `purchase`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -303,6 +327,12 @@ ALTER TABLE `order_manager`
 --
 ALTER TABLE `products`
   MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+
+--
+-- AUTO_INCREMENT for table `purchase`
+--
+ALTER TABLE `purchase`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`
