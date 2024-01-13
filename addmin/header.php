@@ -98,6 +98,17 @@
                 <span class="hide-menu">shoes </span>
               </a>
             </li>
+
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">purchase</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="purchase_table.php" aria-expanded="false">
+                
+                <span class="hide-menu">purchase detail</span>
+              </a>
+            </li>
           </ul>
         
         </nav>

@@ -71,10 +71,10 @@ include("config.php"); ?>
                     if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
 
                     ?>
-                        <form action="purchase.php" method="post">
+                        <form action="purchase.php" method="POST">
                             <div class="form-group">
                                 <label>User Full Name</label>
-                                <input type="text" name="Full_name" class="form-control">
+                                <input type="text" name="username" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label>Address</label>
@@ -82,7 +82,7 @@ include("config.php"); ?>
                             </div>
                             <div class="form-group">
                                 <label>Phone No:</label>
-                                <input type="tel" name="Phone_No" class="form-control">
+                                <input type="tel" name="contact" class="form-control">
                             </div>
                             <br>
                             <div class="form-check">
