@@ -223,7 +223,7 @@ session_start();
                 </a>
                   <ul class="dropdown-menu">
                   <li>
-                      <a href="profile.php" class="dropdown-item">Profile</a>
+                      <a href="edit.php" class="dropdown-item">Profile</a>
                     </li>
                     <li>
                       <a href="logout.php" class="dropdown-item">logout</a>

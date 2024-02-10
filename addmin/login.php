@@ -75,7 +75,6 @@ if(isset($_POST['login'])){
   $password = $_POST['pass'];
 
   $query = "SELECT * from `users` where `user_name` = '$email' AND `passwordd` = '$password'";
-
   $result = mysqli_query($conn, $query);
   $data = mysqli_fetch_assoc($result);
   if($data){
